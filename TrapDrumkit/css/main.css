@@ -1,0 +1,182 @@
+body{
+	min-height: 98vh;
+	overflow: auto;
+	background:-webkit-linear-gradient(0deg, #1C1C1C 40%, #494949 90%); 
+	background:-moz-linear-gradient(0deg, #1C1C1C 10%, #494949 90%); 
+	background: linear-gradient(0deg, #1C1C1C 10%, #494949 90%);
+}
+
+body *{
+	/*	Prevent text selection */
+	 -webkit-touch-callout: none; /* iOS Safari */
+		-webkit-user-select: none; /* Safari */
+		 -khtml-user-select: none; /* Konqueror HTML */
+			 -moz-user-select: none; /* Firefox */
+				-ms-user-select: none; /* Internet Explorer/Edge */
+						user-select: none; /* Non-prefixed version, currently
+																	supported by Chrome and Opera */
+}
+
+#backdrop{
+	background-image: url(../img/audience-1853662_1280_optimized.jpg);
+	width: 100vw;
+	height: 100vh;
+	background-size: cover;
+	max-width: 1024px;
+	max-height: 768px;
+  position: relative;
+	min-height: 300px;
+	margin: auto;
+	background-position: center;
+}
+
+.numpad{
+	position: absolute;
+	height: 300px;
+	width: 275px;
+	border: goldenrod 5px solid;
+	border-radius: 10px;
+	right: 50px;
+	top: calc(50% - 150px);
+	background: rgba(0,0,0,0.6);
+}
+
+.board{
+	height: 300px;
+	width: 600px;
+	border: goldenrod 5px solid;
+	border-radius: 10px;
+	position: absolute;
+	right: 350px;
+	top: calc(50% - 150px);
+	background: rgba(0,0,0,0.6);
+}
+
+.row{
+	height: 76px;
+	margin: 16.76px 5px; 
+	text-align: center;
+}
+
+.keys{
+}
+
+.key{
+	display: inline-block;
+	width: 70px;
+	height: 65px;
+	background-color: rgba(255,255,255,.3);
+	border: 2px solid rgba(255,255,255,.2);
+	border-radius: 5px;
+	font-size: 2.2rem; /* 1.5xbase (1.5x16px) */
+	margin: 3.5px;
+	padding: 0px 2px;
+	transition: all 0.07s; /*Very important*/
+	color: white;
+	text-shadow: 0 0 5px black;
+	text-align: center;
+	vertical-align: bottom;
+	cursor: pointer; /* For iOs to recognize clicking */
+}
+
+.key:hover{
+	cursor: pointer;
+	background-color: rgba(255,255,255,.5);
+}
+
+div.board .key {
+
+}
+
+kbd{
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	display: block;
+	margin-top: 5px;
+	cursor: pointer; /* For iOs to recognize clicking */
+}
+
+span.sound{
+	display: block;
+	font-size: 0.75rem;
+	margin-top: -2px;
+	color: gold;
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	cursor: pointer; /* For iOs to recognize clicking */
+}
+
+.playing{
+	transform: scale(1.2);
+	border-color: aqua;
+	border-color: gold;
+}
+/* For large screens */
+@media (min-width: 1024px){
+	#backdrop {
+		position: absolute;
+    top: 50%;
+    transform: translate3d(-50%, -50% ,0);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    left: 50%;
+	}
+}
+
+/*   Fit on iPad  */
+@media (max-width:996px){
+	body{
+		overflow: hidden;
+		margin: auto;
+	}
+	#backdrop {
+		max-height: none;
+		height: 100vh;
+		width: 100vw;
+		overflow: hidden;
+	}
+	.numpad {
+		position: static;
+		margin: auto;
+	}
+	.board {
+		position: static;
+		display: block;
+		margin: 64px auto;
+	}
+}
+/* Fit on phones */
+@media (max-width:625px){
+	.board {
+		width: 96vw;
+		height: 250px;
+		margin-bottom: 24px;
+		margin-top: 24px;
+	}
+	.board .row{
+		height:95%;
+		min-height: 0px;	
+		width: 90vw;
+		height: 250px;
+		margin: 15% auto;
+	}
+	.board .key {
+		display: inline-block;
+	}
+	.empty {
+		display: none;
+	}
+}
+
+/* Vertical fit */
+@media (max-height: 625px){
+	.board{
+		height: 200px;
+		margin: 8px auto 16px auto;
+	}
+	.board .row{
+		margin-top: 20px;
+	}
+}
