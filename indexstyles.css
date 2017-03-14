@@ -85,3 +85,9 @@ a.button:hover{
 	color: dodgerblue;
 	font-weight: bold;
 }
+
+
+.deactive {
+	color: dimgrey !important;
+	cursor: default;
+}
