@@ -4,42 +4,45 @@ header{
 }
 
 #main{
-		min-height: 300px;
-		height: 60vh;
-		overflow: hidden;
-		margin: auto 10vw;
+		min-height: 400px;
+		padding: 0px 4vw;
+		background: lightgray;
 }
 
 .cards {
 		min-height: 300px;
 		height: 100%;
-		background: darkgray;
     display: flex;
 			display: -webkit-flex;
 		flex-direction: row;
 			-webkit-flex-direction: row;
 		flex-wrap: wrap;
 			-webkit-flex-wrap: wrap;
-		align-items: flex-start;
+		align-items: center;
 			-webkit-align-items: flex-start;
+		justify-content: center;
+			-webkit-justify-content: center;
 		padding: 10px;
 		
 }
 
 .card{
-/*	width: 18.2vw;*/
-/*	min-height: 29.45vw;*/
-	min-width: 232px;
-	min-height: 300px;
-/*	border: 1px solid red;*/
-	flex: 1;
+	width: 300px;
+	height: 360px;
 	overflow: hidden;
 	background: white;
 	margin: 10px;
-	border-radius: 4px;
-	max-height: 45%;
-	height: inherit;
+	border-radius: 5px;
 	position: relative;
+	box-shadow: 0 0 20px rgba(0,0,0,0.19), 0 4px 6px rgba(0,0,0,0.23);
+	transition: all 0.1s;
+}
+
+.card:hover{
+  box-shadow: 0 12px 20px rgba(0,0,0,0.19), 0 8px 8px rgba(0,0,0,0.23);
+	transform: scale(1.02);
+/*	height: calc(360px*1.02);*/
+/*	width: calc(300px*1.02);*/
 }
 
 div.image{
@@ -58,21 +61,27 @@ div.image{
 h3.title{
 	font-family: 'Roboto', sans-serif;
 	font-size: 16sp;
-	margin: 4px 10px;
+	margin: 12px 10px 4px 10px;
 	height: 1.2em;
 }
 p.description{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14sp;
-	margin: 4px 10px 6px 10px;
+	margin: 4px 10px 4px 10px;
 	line-height: 1.5em; 
-	height: 3em;
+	height: 4em;
 }
 
 a.button{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
-	margin: 20px 10px;
+	margin: 20px 16px;
 	color: forestgreen;
 	text-decoration: none;
+	transition: all 0.2s;
+}
+
+a.button:hover{
+	color: dodgerblue;
+	font-weight: bold;
 }

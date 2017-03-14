@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+   <title>GD1</title>
+   <link title="Bootstrap Minifed" rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css" type="text/css">
+   <link rel="stylesheet" href="CSS/site_styles.css" type="text/css">
+ </head>
+ <body>
+	<h1>GD1</h1>
+	<div class="container">
+		<div class="row" id="game_window">
+			<h3 id="level">Background</h3>
+		 <div id="grid"></div>
+			<div id="overlay">
+			   <div id="backdrop"></div>
+			   <h1 id="msg_backdrop">Chapter x</h1>
+			   <div class="message">
+					<p class="alert" onselectstart="return false" unselectable="on">Click 'Continue' to Begin</p>
+					<p class="button OK" onselectstart="return false" unselectable="on">Continue</p>
+			   </div>
+			</div>
+			<div class="choice-column">
+			   <p class="action PulseOrange" value="1" onselectstart="return false" unselectable="on">Action 1</p>
+			   <p class="action PulseOrange" value="2" onselectstart="return false" unselectable="on">Action 2</p>
+			   <p class="action PulseOrange" value="3" onselectstart="return false" unselectable="on">Action 3</p>
+			</div>
+			<div class="ContinueBox">
+			    <p class="continue button PulseOrange">Continue</p>
+			</div>
+			<div class="story-screen">
+			   <p onselectstart="return false" unselectable="on">This is an test output message. Will be shown on screen.</p>
+			</div>
+			<div class="showAllText button"><p>Show Text</p></div>
+			<div class="toolbar">
+				<div class="tool">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="skiptool">
+		<label for="chapter">Chapter:</label><input name="chapter" type="number" step="1" min="0"></input>
+		<label for="act">Act:</label><input name="Act" type="number" step="1" min="0"></input>
+		<button name="goToBtn">Go</button>
+	</div>
+	<!-- JS  -->
+	<script	src="JS/jquery-1.12.3.min.js"></script>
+	<script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+	<script src="JS/commands.js"></script>
+ </body>
+</html>
