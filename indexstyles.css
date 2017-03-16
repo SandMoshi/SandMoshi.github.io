@@ -1,12 +1,58 @@
 header{
 		height: 20vh;
 		min-height: 100px;
+		position: relative;
+}
+
+header #backdrop{
+	height: 100%;
+	width: 100%;
+	background: url(img/detroit.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.gradient {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		opacity: 0.8;
+		background: #7b4397; /* fallback for old browsers */
+		background: -webkit-linear-gradient(to left, #7b4397 , #dc2430); /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to left, #7b4397 , #dc2430); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+}
+
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+
+.overlay h1{
+	color: white;
+	font-size: 3em;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+/*	text-transform: uppercase;*/
+	line-height: 0.5em;
+}
+
+.overlay h2{
+	color: white;
+	font-size: 3em;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	line-height: 0.8em;
 }
 
 #main{
 		min-height: 400px;
 		padding: 0px 4vw;
 		background: lightgray;
+		position: relative;
 }
 
 .cards {
@@ -90,4 +136,23 @@ a.button:hover{
 .deactive {
 	color: dimgrey !important;
 	cursor: default;
+}
+
+div.player{
+	position: absolute;
+	right: 4vw;
+	top: 24px;
+}
+div.player img{
+	display: block;
+	margin-bottom: 12px;
+}
+
+img.play{
+	transition: all 0.4s;	
+}
+
+img.play:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
