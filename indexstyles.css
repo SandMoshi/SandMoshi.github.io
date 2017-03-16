@@ -36,7 +36,8 @@ header #backdrop{
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
 /*	text-transform: uppercase;*/
-	line-height: 0.5em;
+/*	line-height: 0.5em;*/
+	margin: 0px;
 }
 
 .overlay h2{
@@ -45,7 +46,8 @@ header #backdrop{
 	text-align: center;
 	font-family: 'Lato', sans-serif;
 	text-transform: uppercase;
-	line-height: 0.8em;
+/*	line-height: 0.8em;*/
+	margin: 8px 0 0 0;
 }
 
 #main{
@@ -155,4 +157,15 @@ img.play{
 img.play:hover {
     cursor: pointer;
     transform: scale(1.1);
+}
+
+@media (max-width:448px){
+	.overlay h1 {
+		font-size: 2.2em;	
+	}
+	
+	div.player{
+		right: 2vw;
+	}
+	
 }
