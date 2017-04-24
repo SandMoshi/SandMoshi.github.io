@@ -1,0 +1,57 @@
+var foods =[
+	{
+		"food": "grilled cheese",
+		"isfresh": false,
+		"temp": "hot",
+	},
+	{
+		"food": "yogurt & granola"  ,
+		"isfresh": false ,
+		"temp": "cold",
+	},
+	{
+		"food": "rice with beans"  ,
+		"isfresh": false  ,
+		"temp": "hot" ,
+	},
+	{
+		"food": "pizza"  ,
+		"isfresh": false,
+		"temp": "hot",
+	},
+	{
+		"food": "tacos"  ,
+		"isfresh": true ,
+		"temp": "hot",
+	},
+	{
+		"food": "beef & broccoli"  ,
+		"isfresh": true ,
+		"temp": "hot" ,
+	},
+	{
+		"food": "peanut butter & jelly"  ,
+		"isfresh": false  ,
+		"temp": "cold" ,
+	},
+	{
+		"food": "hamburger"  ,
+		"isfresh": true ,
+		"temp": "hot" ,
+	},
+	{
+		"food": "chicken and pasta"  ,
+		"isfresh": true  ,
+		"temp": "hot" ,
+	},
+	{
+		"food": "tuna melt"  ,
+		"isfresh": true ,
+		"temp": "hot" ,
+	},
+	{
+		"food": "garden salad"  ,
+		"isfresh": true ,
+		"temp": "cold" ,
+	}
+]

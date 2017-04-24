@@ -1,0 +1,43 @@
+<!Doctype html>
+<html>
+<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="normalizeV6.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Courgette|Roboto" rel="stylesheet">
+		<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="board">
+		<h1 id="title">food pickr</h1>
+		<h3>Do you have fresh groceries?</h3>
+		<div class="options">
+	  	<div class="fresh">
+					<p>No</p>
+					<label class="switch">
+						<input class="fresh" type="checkbox">
+						<div class="slider"></div>
+					</label>
+					<p>Yes</p>
+		  </div>
+		<h3>I want to eat something ...</h3>
+	  	<div class="temp">
+					<p>Cold</p>
+					<label class="switch">
+						<input class="temp" type="checkbox">
+						<div class="slider"></div>
+					</label>
+					<p>Warm</p>
+		  </div>
+		</div>
+		<div class="answer">
+		<h2>You should make ..</h2>
+		<h2 class="food">Water</h2>
+		<div class="line"></div>
+		</div>
+		<button class="button go" type="button" title="Get Suggestion">Get Suggestion</button>
+	</div>
+	<!--   ------>
+  <script src="foods.json" ></script>
+	<script src="script.js" type="text/javascript" ></script>
+</body>
+</html>
