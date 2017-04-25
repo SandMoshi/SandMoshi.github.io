@@ -53,5 +53,45 @@ var foods =[
 		"food": "garden salad"  ,
 		"isfresh": true ,
 		"temp": "cold" ,
+	},
+	{
+		"food": "cereal with milk"  ,
+		"isfresh": false ,
+		"temp": "cold" ,
+	},
+	{
+		"food": "mac n' cheese"  ,
+		"isfresh": false ,
+		"temp": "hot" ,
+	},
+	{
+		"food": "veggies & dip"  ,
+		"isfresh": true ,
+		"temp": "cold" ,
+	},
+	{
+		"food": "deli sandwhich"  ,
+		"isfresh": true ,
+		"temp": "cold" ,
+	},
+	{
+		"food": "lentil soup"  ,
+		"isfresh": true ,
+		"temp": "hot" ,
+	},
+	{
+		"food": "bagel with cream cheese"  ,
+		"isfresh": false ,
+		"temp": "cold" ,
+	},
+	{
+		"food": "chicken nuggets"  ,
+		"isfresh": false ,
+		"temp": "hot" ,
+	},
+	{
+		"food": "homemade pasta salad"  ,
+		"isfresh": true ,
+		"temp": "cold" ,
 	}
 ]

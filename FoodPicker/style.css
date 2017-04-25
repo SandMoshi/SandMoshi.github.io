@@ -1,5 +1,7 @@
 body{
 	font-size: 16px;
+	display: flex;
+	justify-content: center;
 }
 
 #board{
@@ -7,7 +9,7 @@ body{
 	width: 400px;
 	background-color: cadetblue;
 	border-radius: 8px;
-	margin: 16px;
+	margin: 0px;
 	overflow: hidden;
 }
 
@@ -24,6 +26,7 @@ h3{
 	font-family: 'open sans', sans-serif;
 	font-weight: 400;
 	text-align: center;
+	padding: 0px 12px;
 }
 
 div.options{
@@ -53,6 +56,7 @@ div.answer{
 }
 
 div.answer h2{
+	width: 100%;
 	color:white;
 	text-transform: uppercase;
 	text-align: center;
@@ -61,7 +65,9 @@ div.answer h2{
 }
 
 div.answer h2.food{
+	margin-top: 40px;
 	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
 	-webkit-transition: all 500ms cubic-bezier(0.230, 1, 0.720, 0.710); /* older webkit */
 	-webkit-transition: all 500ms cubic-bezier(0.230, 1.410, 0.720, 0.710); 
    -moz-transition: all 500ms cubic-bezier(0.230, 1.410, 0.720, 0.710); 
@@ -78,15 +84,23 @@ div.answer h2.food{
 }
 
 .visible{
+	transition-delay: 1s;
 	opacity: 1 !important;
 	margin-top: 50px !important;
 }
 
+div.answer{
+/*	display: flex;
+	justify-content: center;*/
+}
+
 div.answer .line{
+	margin: auto;
 	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
 	width: 180px;
 	bottom: 10px;
-	left: 110px;
 	border-bottom: solid 2px white;
 }
 
@@ -158,3 +172,48 @@ input:checked + .slider:before {
 }
 
 /*---- end of slider toggles ----*/
+
+@media(max-width:1260px){
+	body{
+		margin: 0px;
+		display: flex;
+		align-items: center;
+		min-height: 100vh;
+		background: cadetblue;
+		overflow: hidden;
+	}
+	#board{
+		border-radius: 0px;
+		height: 100%;
+	}
+}
+@media(max-height:600px){
+	h3{
+		font-size: 1.2em;
+	}
+	
+	div.answer{
+		margin-top: 8px;
+		margin-bottom: 8px;
+		max-height: 80px; 
+	}
+	
+	div.answer h2:first-child{
+		margin-bottom: 8px;
+		font-size: 1.3em;
+	}
+	
+	div.answer h2.food{
+		margin-top: 15px;
+	}
+	
+	.visible{
+		transition-delay: 1s;
+		opacity: 1 !important;
+		margin-top: 10px !important;
+	}
+	
+	button.go{
+		margin-top: 8px;
+	}
+}
