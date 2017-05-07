@@ -16,6 +16,11 @@ function findMatches(wordToMatch, list){
 
 function displayMatches(){
 	console.log("dispalyMatches() just ran")
+	//Make sure field isn't blank
+	if(this.value === ""){
+		suggestions.innerHTML="";
+		return;
+	}
 	//Go find the data that matches the search term
 	var matchingData = findMatches(this.value,colleges);
 	//Map the matching data to the html suggestions
@@ -31,7 +36,7 @@ function displayMatches(){
 		return 	`
 							<li>
 									<span class="school">${regionName}  ${collegeName}</span>
-									<span class="location">${cityName},${stateName}</span>
+									<span class="location">${cityName}, ${stateName}</span>
 						</li>
 						`;	
 	}).join('');
