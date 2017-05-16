@@ -1,11 +1,19 @@
+html{
+}
 body{
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 }
 canvas#draw {
 	border: solid black 5px;
 	cursor: cell;
 	margin-top: 10px;
+	max-width: 97vw;
+	max-height: calc(800/575*97vw);
+	touch-event: none;
+	width: 575px;
+	height: 800px;
 }
 
 div.column{
@@ -66,7 +74,7 @@ div.pallete{
 	display: inline-block;
 	margin-right: 10px;
 	border: solid 2px black;
-	background: black;
+	background: grey;
 	margin: auto;
 	display: block;
 }
@@ -105,4 +113,11 @@ div.pagebuttons{
 .pagebuttons p.text {
 	display: inline;
 	align-self: center;
+}
+
+.locked{
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
 }
