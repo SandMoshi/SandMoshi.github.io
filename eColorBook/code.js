@@ -20,6 +20,7 @@ document.body.addEventListener("touchstart", function (e) {
 	console.log(e.target);
   if (e.target === canvas) {
 		document.body.classList.add("locked"); //this prevents scrolling
+		e.preventDefault();
 		//		console.log("prevented scrolling");
   }
 }, false);
