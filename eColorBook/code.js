@@ -11,9 +11,9 @@ ctx.lineJoin = 'round';
 ctx.lineCap = 'round';
 ctx.lineWidth = 12;
 
-let isDrawing = false;
-let lastX = 0;
-let lastY = 0;
+var isDrawing = false;
+var lastX = 0;
+var lastY = 0;
 
 // Prevent scrolling when touching the canvas
 document.body.addEventListener("touchstart", function (e) {
@@ -94,13 +94,13 @@ canvas.addEventListener('touchend', function(){
 });
 
 //Listen for color change
-let colors = document.querySelectorAll("div.pallete div.color a");
-let currentcolorbox = document.querySelector("div.currentColors div.color");
+var colors = document.querySelectorAll("div.palvare div.color a");
+var currentcolorbox = document.querySelector("div.currentColors div.color");
 for (var i=0; i < colors.length; i++){ 
 	{
-		let item = colors[i];
+		var item = colors[i];
 		item.addEventListener('click', function(){
-			let chosenColor = item.dataset.color;
+			var chosenColor = item.dataset.color;
 			//alert(chosenColor);
 			ctx.strokeStyle = chosenColor;
 			currentcolorbox.style.backgroundColor = chosenColor
@@ -109,17 +109,17 @@ for (var i=0; i < colors.length; i++){
 }
 
 //Listen for brush size change
-let brushSizeInput = document.querySelector("div.brushsize input");
-let brushSizeText = document.querySelector("div.brushsize p");
+var brushSizeInput = document.querySelector("div.brushsize input");
+var brushSizeText = document.querySelector("div.brushsize p");
 brushSizeInput.addEventListener('input', function(){
-	let brushsize = brushSizeInput.value;
+	var brushsize = brushSizeInput.value;
 	//	console.log(brushsize);
 	brushSizeText.innerHTML = "Brush Size: " + brushsize;
 	ctx.lineWidth = brushsize;
 })
 
 //Image Urls
-let files = [
+var files = [
 	"fox-trans.png",
 	"cat-trans.png",
 	"elk-trans.png",
@@ -127,8 +127,8 @@ let files = [
 	"mandela-trans.png"
 ];
 //Starting images
-let fileindex = 0;
-let filename = files[0];
+var fileindex = 0;
+var filename = files[0];
 
 //Listen for Image Change Button Clicks
 const nextImage = document.querySelector("div.pagebuttons .next");
@@ -157,7 +157,7 @@ function change_file(direction){
 //Load image
 load_image();
 function load_image(){
-	let base = new Image();
+	var base = new Image();
 	base.src = 'pages/' + filename;
 	base.onload = function(){
 		ctx.drawImage(base, 0 , 0, canvas.width, canvas.height);
