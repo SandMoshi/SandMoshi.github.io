@@ -15,12 +15,14 @@ var isDrawing = false;
 var lastX = 0;
 var lastY = 0;
 
+var item = [];
+
 // Prevent scrolling when touching the canvas
 document.body.addEventListener("touchstart", function (e) {
 	console.log(e.target);
   if (e.target === canvas) {
 		document.body.classList.add("locked"); //this prevents scrolling
-		e.preventDefault();
+      //		e.preventDefault();
 		//		console.log("prevented scrolling");
   }
 }, false);
@@ -94,13 +96,13 @@ canvas.addEventListener('touchend', function(){
 });
 
 //Listen for color change
-var colors = document.querySelectorAll("div.palvare div.color a");
+var colors = document.querySelectorAll("div.pallete div.color a");
 var currentcolorbox = document.querySelector("div.currentColors div.color");
 for (var i=0; i < colors.length; i++){ 
 	{
-		var item = colors[i];
-		item.addEventListener('click', function(){
-			var chosenColor = item.dataset.color;
+      item[i] = colors[i];
+		item[i].addEventListener('click', function(){
+			var chosenColor = this.dataset.color;
 			//alert(chosenColor);
 			ctx.strokeStyle = chosenColor;
 			currentcolorbox.style.backgroundColor = chosenColor

@@ -4,12 +4,14 @@ body{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+   justify-content: center;
 }
 canvas#draw {
 	border: solid black 5px;
 	cursor: cell;
-	margin-top: 10px;
-	max-width: 97vw;
+/*	margin-top: 10px;*/
+   margin: 10px auto;
+	max-width: calc(97vw - 5px);
 	max-height: calc(800/575*97vw);
 	touch-event: none;
 	width: 575px;
@@ -21,6 +23,9 @@ div.column{
 	user-select: none;
 	-moz-user-select: none;
 	-webkit-user-select: none;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 div.pallete{
