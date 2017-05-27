@@ -49,6 +49,7 @@ function drawline(e){
 		ctx.stroke();
 		lastX = e.targetTouches[0].pageX - rect.left;
 		lastY = e.targetTouches[0].pageY - rect.top;
+      e.preventDefault(); //Added to prevent iOS scrolling
 	}
 	else{
 //		console.log(e);
