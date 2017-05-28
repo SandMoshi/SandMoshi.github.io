@@ -18,20 +18,20 @@ var lastY = 0;
 var item = [];
 
 // Prevent scrolling when touching the canvas
-document.body.addEventListener("touchstart", function (e) {
-	console.log(e.target);
-  if (e.target === canvas) {
-		document.body.classList.add("locked"); //this prevents scrolling
-      //		e.preventDefault();
-		//		console.log("prevented scrolling");
-  }
-}, false);
-document.body.addEventListener("touchend", function (e) {
-  if (e.target === canvas) {
-		document.body.classList.remove("locked"); //this allows scrolling
-		//		console.log("prevented scrolling");
-  }
-}, false);
+//document.body.addEventListener("touchstart", function (e) {
+//  console.log(e.target);
+//  if (e.target === canvas) {
+//		document.body.classList.add("locked"); //this prevents scrolling
+//      //		e.preventDefault();
+//		//		console.log("prevented scrolling");
+//  }
+//}, false);
+//document.body.addEventListener("touchend", function (e) {
+//  if (e.target === canvas) {
+//		document.body.classList.remove("locked"); //this allows scrolling
+//		//		console.log("prevented scrolling");
+//  }
+//}, false);
 
 function drawline(e){
 //	console.log(isDrawing);
@@ -40,7 +40,7 @@ function drawline(e){
 	}
 	if(e.offsetX === undefined){
 		var rect = e.target.getBoundingClientRect();
-		//		console.log(e.targetTouches[0].pageX);
+				console.log(e.targetTouches[0].pageX);
 		ctx.beginPath();
 		ctx.moveTo(lastX,lastY);
 		lastX = e.targetTouches[0].pageX - rect.left;
@@ -49,7 +49,6 @@ function drawline(e){
 		ctx.stroke();
 		lastX = e.targetTouches[0].pageX - rect.left;
 		lastY = e.targetTouches[0].pageY - rect.top;
-      e.preventDefault(); //Added to prevent iOS scrolling
 	}
 	else{
 //		console.log(e);
@@ -77,14 +76,16 @@ canvas.addEventListener('mouseup', function(){
 canvas.addEventListener('mouseout', function(){isDrawing = false});
 //Add the same event listeners but for touch devices now
 canvas.addEventListener('touchmove',function(e){
+   e.preventDefault();
 	isDrawing = true
-	var rect = e.target.getBoundingClientRect();
-	lastX = e.targetTouches[0].pageX - rect.left;
-	lastY = e.targetTouches[0].pageY - rect.top;
+//	var rect = e.target.getBoundingClientRect();
+//	lastX = e.targetTouches[0].pageX - rect.left;
+//	lastY = e.targetTouches[0].pageY - rect.top;
 	drawline(e);
 	});
 canvas.addEventListener('touchstart', function(e){
 	//	console.log(e);
+   e.preventDefault();
 	isDrawing = true
 	var rect = e.target.getBoundingClientRect();
 	lastX = e.targetTouches[0].pageX - rect.left;
