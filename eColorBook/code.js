@@ -3,9 +3,6 @@ canvas.width = canvas.offsetWidth;
 canvas.height = canvas.offsetHeight;
 const ctx = canvas.getContext('2d');
 
-//canvas.width = window.innerWidth;
-//canvas.height = window.innerHeight;
-
 ctx.strokeStyle = "grey";
 ctx.lineJoin = 'round';
 ctx.lineCap = 'round';
@@ -17,21 +14,10 @@ var lastY = 0;
 
 var item = [];
 
-// Prevent scrolling when touching the canvas
-//document.body.addEventListener("touchstart", function (e) {
-//  console.log(e.target);
-//  if (e.target === canvas) {
-//		document.body.classList.add("locked"); //this prevents scrolling
-//      //		e.preventDefault();
-//		//		console.log("prevented scrolling");
-//  }
-//}, false);
-//document.body.addEventListener("touchend", function (e) {
-//  if (e.target === canvas) {
-//		document.body.classList.remove("locked"); //this allows scrolling
-//		//		console.log("prevented scrolling");
-//  }
-//}, false);
+// Make sure that user knows to refresh on orientation change
+window.addEventListener("orientationchange", function(o){
+ alert("You just changed the orientation of your device. You may experience issues drawing. To fix this, please refresh the page, but you will lose your data.");
+})
 
 function drawline(e){
 //	console.log(isDrawing);
@@ -40,15 +26,15 @@ function drawline(e){
 	}
 	if(e.offsetX === undefined){
 		var rect = e.target.getBoundingClientRect();
-				console.log(e.targetTouches[0].pageX);
+				console.log(e.targetTouches[0].pageY);
 		ctx.beginPath();
 		ctx.moveTo(lastX,lastY);
-		lastX = e.targetTouches[0].pageX - rect.left;
-		lastY = e.targetTouches[0].pageY - rect.top;
+		lastX = e.targetTouches[0].pageX - rect.left - window.scrollX;
+		lastY = e.targetTouches[0].pageY - rect.top - window.scrollY;
 		ctx.lineTo(lastX,lastY);
 		ctx.stroke();
-		lastX = e.targetTouches[0].pageX - rect.left;
-		lastY = e.targetTouches[0].pageY - rect.top;
+		lastX = e.targetTouches[0].pageX - rect.left - window.scrollX;
+		lastY = e.targetTouches[0].pageY - rect.top - window.scrollY;
 	}
 	else{
 //		console.log(e);
@@ -78,9 +64,6 @@ canvas.addEventListener('mouseout', function(){isDrawing = false});
 canvas.addEventListener('touchmove',function(e){
    e.preventDefault();
 	isDrawing = true
-//	var rect = e.target.getBoundingClientRect();
-//	lastX = e.targetTouches[0].pageX - rect.left;
-//	lastY = e.targetTouches[0].pageY - rect.top;
 	drawline(e);
 	});
 canvas.addEventListener('touchstart', function(e){
@@ -88,8 +71,8 @@ canvas.addEventListener('touchstart', function(e){
    e.preventDefault();
 	isDrawing = true
 	var rect = e.target.getBoundingClientRect();
-	lastX = e.targetTouches[0].pageX - rect.left;
-	lastY = e.targetTouches[0].pageY - rect.top;
+	lastX = e.targetTouches[0].pageX - rect.left - window.scrollX;
+	lastY = e.targetTouches[0].pageY - rect.top - window.scrollY;
 	drawline(e);
 });
 canvas.addEventListener('touchend', function(){

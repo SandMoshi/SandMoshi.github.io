@@ -11,8 +11,8 @@ canvas#draw {
 	cursor: cell;
 /*	margin-top: 10px;*/
    margin: 10px auto;
-	max-width: calc(97vw - 5px);
-	max-height: calc(800/575*97vw);
+	max-width: calc(90vw - 5px);
+	max-height: calc(800/575*90vw);
 	touch-event: none;
 	width: 575px;
 	height: 800px;
