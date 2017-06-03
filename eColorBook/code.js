@@ -152,3 +152,22 @@ function load_image(){
 		ctx.drawImage(base, 0 , 0, canvas.width, canvas.height);
 	}
 }
+
+//Show and Hide Paint Brush Toolbox
+const toolsbutton = document.querySelector("button.brushes");
+const tools = document.querySelector(".tools");
+
+toolsbutton.addEventListener("click", toggleTools);
+
+function toggleTools(){
+	if(toolsbutton.classList.contains("closed")){
+		tools.classList.add("active");
+		toolsbutton.classList.remove("closed");
+		toolsbutton.innerHTML = "Hide Brushes";
+	}
+	else {
+		tools.classList.remove("active");
+		toolsbutton.innerHTML = "Show Brushes";
+		toolsbutton.classList.add("closed");
+	}
+}

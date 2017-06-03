@@ -1,10 +1,7 @@
 html{
 }
 body{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-   justify-content: center;
+	font-size: 16px;
 }
 canvas#draw {
 	border: solid black 5px;
@@ -16,6 +13,8 @@ canvas#draw {
 	touch-event: none;
 	width: 575px;
 	height: 800px;
+	text-align: center;
+	display: block;
 }
 
 div.column{
@@ -23,9 +22,8 @@ div.column{
 	user-select: none;
 	-moz-user-select: none;
 	-webkit-user-select: none;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+	display: block;
+	margin: auto;
 }
 
 div.pallete{
@@ -36,8 +34,6 @@ div.pallete{
 }
 
 .pallete div.color{
-	display: flex;
-	align-content: center;
 	margin-bottom: 10px;
 }
 
@@ -104,9 +100,6 @@ div.pagebuttons{
 	margin-top: 4px;
 	border: solid 2px black;
 	text-align: center;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
 }
 .pagebuttons p.arrow{
 	font-size: 40px;
@@ -118,6 +111,7 @@ div.pagebuttons{
 .pagebuttons p.text {
 	display: inline;
 	align-self: center;
+	vertical-align: super;
 }
 
 .locked{
@@ -125,4 +119,34 @@ div.pagebuttons{
     overflow: hidden;
     width: 100%;
     position: fixed;
+}
+.tools{
+			transition: all 0.6s ease-in;
+			position: absolute;
+			top: 0;
+			transform: translate(-50%,-100%);
+			left: 50%;
+			background: white;
+	}
+.tools.active{
+			position: absolute;
+			transform: translate(-50% , 30px)
+	}
+button.brushes{
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+	background: #e67e22;
+	border: none;
+	padding: 8px 16px;
+	border-radius: 4px;
+	font-size: 1.5em;
+	color: #212121;
+	min-width: 200px;
+}
+
+button.brushes:hover{
+	cursor: pointer;
+	background: #f39c12;
+	box-shadow: inset 2px 3px 1px darkgray;
 }
