@@ -33,6 +33,7 @@ function drawline(e){
 		lastY = e.targetTouches[0].pageY - rect.top - window.scrollY;
 		ctx.lineTo(lastX,lastY);
 		ctx.stroke();
+		load_image();
 		lastX = e.targetTouches[0].pageX - rect.left - window.scrollX;
 		lastY = e.targetTouches[0].pageY - rect.top - window.scrollY;
 	}
@@ -42,6 +43,7 @@ function drawline(e){
 		ctx.moveTo(lastX,lastY);
 		ctx.lineTo(e.offsetX, e.offsetY);
 		ctx.stroke();
+		load_image();
 		lastX = e.offsetX;
 		lastY = e.offsetY;
 	}
