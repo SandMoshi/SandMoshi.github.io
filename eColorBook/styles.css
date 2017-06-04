@@ -32,7 +32,10 @@ div.pallete{
 	min-height: 300px;
 	padding: 10px 2px 10px 10px;
 }
-
+div.pallete .column{
+	display: flex;
+	justify-content: center;
+}
 .pallete div.color{
 	margin-bottom: 10px;
 }
@@ -84,6 +87,11 @@ div.pallete{
 	text-align: center;
 	margin: 8px auto;
 	font-weight: bold;
+}
+
+input.colorpicker{
+	display: block;
+	margin: auto;
 }
 
 .brushsize {

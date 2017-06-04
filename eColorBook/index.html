@@ -11,6 +11,7 @@
 	<button class="brushes closed">Show Brushes</button>
 	<div class="tools column">
 		<div class="pallete">
+			<div class="column">
 				<div class="color peach">
 					<a class="colorbox" data-color="#EECBAD"></a>
 					<a class="text" data-color="#EECBAD">Peach</a>
@@ -27,6 +28,15 @@
 					<a class="colorbox" data-color="#B22222"></a>
 					<a class="text" data-color="#B22222">Red</a>
 				</div>
+			</div>
+			<div class="column">
+				<div class="color eraser">
+					<a class="colorbox" data-color="#FFFFFF">
+						<img src="brushes/erase-text.svg">
+					</a>
+					<a class="text" data-color="#FFFFFF">Eraser</a>
+				</div>
+			</div>
 <!--
 				<div class="color">
 					<a class="colorbox" data-color=""></a>
@@ -35,6 +45,8 @@
 -->
 			<!-- seperator -->
 			<div class="currentColors">
+				<p>Choose Other Color:</p>
+				<input class="colorpicker" type="color" aria-label="Select a color">
 				<p>Current Color:</p>
 				<div class="color"></div>
 			</div>

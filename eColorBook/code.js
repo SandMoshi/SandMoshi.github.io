@@ -96,6 +96,14 @@ for (var i=0; i < colors.length; i++){
 		})
 	};
 }
+var picker = document.querySelector("input[type='color']");
+picker.addEventListener("input",function(){
+		var chosenColor = this.value;
+		//alert(chosenColor);
+		ctx.strokeStyle = chosenColor;
+		currentcolorbox.style.backgroundColor = chosenColor
+});
+
 
 //Listen for brush size change
 var brushSizeInput = document.querySelector("div.brushsize input");
