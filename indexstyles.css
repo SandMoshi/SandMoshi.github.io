@@ -54,6 +54,40 @@ header #backdrop{
 	margin: 0;
 }
 
+ul{
+	list-style: none;
+	margin: auto;
+	padding-left: 0px;
+}
+
+li{
+	display: inline;
+	margin: auto 12px;
+}
+a.links{
+	margin: auto;
+}
+
+img.github{
+	width: 32px;
+	margin: 4px;
+	transition: all 0.2s;
+}
+
+img.email{
+	width: 32px;
+	margin: 6px;
+	transition: all 0.2s;
+}
+
+a.links{
+	display: inline;
+}
+
+.links img:hover{
+	transform: scale(1.1);
+}
+
 #main{
 		min-height: 400px;
 		padding: 0px 4vw;
