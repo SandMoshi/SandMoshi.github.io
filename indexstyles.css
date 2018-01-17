@@ -1,6 +1,6 @@
 header{
 		height: 20vh;
-		min-height: 164px;
+		min-height: 204px;
 		position: relative;
 }
 
@@ -35,9 +35,10 @@ header #backdrop{
 
 .overlay h1.name{
 	color: white;
-	font-size: 3em;
+	font-size: 4em;
 	text-align: center;
-	font-family: 'Open Sans', sans-serif;
+	/* font-family: 'Open Sans', sans-serif; */
+	font-family: 'Ubuntu', sans-serif;
 	text-transform: uppercase;
 /*	line-height: 0.8em;*/
 		margin: 0 auto 8px auto;
@@ -45,7 +46,7 @@ header #backdrop{
 
 .overlay h2.title{
 	color: white;
-	font-size: 4em;
+	font-size: 2em;
 	text-align: center;
 	font-family: 'Leckerli One', sans-serif;
 	font-weight: lighter;
@@ -80,12 +81,12 @@ img.email{
 	transition: all 0.2s;
 }
 
-a.links{
+a.links img{
 	display: inline;
 }
 
 .links img:hover{
-	transform: scale(1.1);
+	transform: scale(1.2);
 }
 
 #main{
@@ -193,8 +194,43 @@ img.play{
 }
 
 img.play:hover {
-    cursor: pointer;
-    transform: scale(1.1);
+	cursor: pointer;
+}
+
+.tooltip{
+	position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+	position: absolute;
+	top: 40px;
+	transform: translateX(-75px);
+    z-index: 1;
+}
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
 
 @media (max-width:610px){
@@ -203,11 +239,14 @@ img.play:hover {
 	}
 	.overlay h2.title{
 		font-size: 2.4em;
+		max-width: 90vw;
+		margin: auto;
 	}
 	
 }
 
 @media (max-width:448px){
+
 	.overlay h1 {
 		font-size: 2.2em;	
 	}
@@ -215,5 +254,7 @@ img.play:hover {
 	div.player{
 		right: 2vw;
 	}
+
+
 	
 }
