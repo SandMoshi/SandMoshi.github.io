@@ -137,13 +137,13 @@ div.image{
 		height: 61.8%;
 		width: 100%;
 		text-align: center;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
 }
 
 .card img{
 	height: 100%;
-	max-width: 500px;
-	margin-left: 50%;
-	transform: translateX(-50%);
 }
 
 h3.title{
