@@ -1,3 +1,8 @@
+body{
+	font-size: 16px;
+	background: lightgray;
+}
+
 header{
 		height: 20vh;
 		min-height: 204px;
@@ -93,7 +98,6 @@ a.links img{
 #main{
 		min-height: 400px;
 		padding: 2rem 4vw 0px 4vw;
-		background: lightgray;
 		position: relative;
 }
 
@@ -176,17 +180,35 @@ a.button:hover{
 
 
 .deactive {
-	color: dimgrey !important;
+	color: rgb(27, 7, 7) !important;
 	cursor: default;
 }
 
+/* ============== Music Player ============== */
+
+p.motto{
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	font-size: 16px;
+	margin-top: 0px;
+	margin-bottom: 8px;
+	color: #E0218A;
+}
+
+hr.motto{
+	width: 20vw;
+	border: dotted 1px white;
+}
+
 div.player{
-	position: absolute;
-	right: 4vw;
-	top: 24px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-left: 8px;
 }
 div.player img{
-	display: block;
 	margin-bottom: 12px;
 }
 
@@ -197,6 +219,35 @@ img.play{
 img.play:hover {
 	cursor: pointer;
 }
+
+div.progress{
+	position: relative;
+	height: 24px;
+	min-width: 100px;
+	margin: 0px 12px;
+}
+
+div.progress div.bar{
+	width: 100px;
+	max-width: 50vw;
+	height: 4px;
+	background-color: #E0218A;
+	position: absolute;
+	top: 10px;
+}
+
+div.progress div.dot{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #E0218A;
+	position: absolute;
+	top: 2px;
+	left: 0px;
+	margin-left: 4px;
+}
+
+/* ================ Tool tip ================ */
 
 .tooltip{
 	position: relative;
@@ -231,8 +282,44 @@ img.play:hover {
 
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
-    visibility: visible;
+	visibility: visible;
+	margin-top: 20px;
 }
+
+/* ============= Footer ============== */
+footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+footer a{
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 60px;
+	display: block;
+	padding: 24px 36px;
+}
+
+a.linkedin{
+	background:#0077B5;
+	color: white;
+	font-size: 24px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	border: none;
+	transition: all 0.3s ease;
+	box-shadow: 0px 0px 5px grey;
+	border-radius: 2px;
+	text-decoration: none;
+}
+
+a.linkedin:hover{
+	background: #B72936;
+	cursor: pointer;
+}
+
+
 
 @media (max-width:610px){
 
@@ -263,6 +350,9 @@ img.play:hover {
 		right: 2vw;
 	}
 
+	div.player{
+		margin-top: 10px;
+	}
 
 	
 }
