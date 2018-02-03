@@ -127,15 +127,14 @@ a.links img{
 	border-radius: 5px;
 	position: relative;
 	box-shadow: 0 0 20px rgba(0,0,0,0.19), 0 4px 6px rgba(0,0,0,0.23);
-	transition: all 0.1s;
+	transition: all 0.2s ease-in;
 }
 
 .card:hover{
-  box-shadow: 0 12px 20px rgba(0,0,0,0.19), 0 8px 8px rgba(0,0,0,0.23);
+	box-shadow: 0 12px 20px rgba(0,0,0,0.19), 0 8px 8px rgba(0,0,0,0.23);
 	transform: scale(1.02);
-/*	height: calc(360px*1.02);*/
-/*	width: calc(300px*1.02);*/
 }
+
 
 div.image{
 		height: 61.8%;
@@ -291,14 +290,15 @@ footer{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin-bottom: 60px;
 }
 
 footer a{
 	margin: auto;
 	margin-top: 20px;
-	margin-bottom: 60px;
 	display: block;
 	padding: 24px 36px;
+	margin-bottom: 40px;
 }
 
 a.linkedin{
