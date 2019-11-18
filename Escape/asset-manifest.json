@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/Escape/static/css/main.ebf5ea82.chunk.css",
+    "main.js": "/Escape/static/js/main.e1c16461.chunk.js",
+    "main.js.map": "/Escape/static/js/main.e1c16461.chunk.js.map",
+    "runtime-main.js": "/Escape/static/js/runtime-main.1fc15ef6.js",
+    "runtime-main.js.map": "/Escape/static/js/runtime-main.1fc15ef6.js.map",
+    "static/js/2.1efc1111.chunk.js": "/Escape/static/js/2.1efc1111.chunk.js",
+    "static/js/2.1efc1111.chunk.js.map": "/Escape/static/js/2.1efc1111.chunk.js.map",
+    "index.html": "/Escape/index.html",
+    "precache-manifest.c4ea35bfac090e5706f2e076e1dc3671.js": "/Escape/precache-manifest.c4ea35bfac090e5706f2e076e1dc3671.js",
+    "service-worker.js": "/Escape/service-worker.js",
+    "static/css/main.ebf5ea82.chunk.css.map": "/Escape/static/css/main.ebf5ea82.chunk.css.map",
+    "static/media/index.css": "/Escape/static/media/Greenscr.93f3577a.ttf",
+    "static/media/Angel_of_Mercy.mp3": "/Escape/static/media/Angel_of_Mercy.8283cf1c.mp3",
+    "static/media/Arcade.mp3": "/Escape/static/media/Arcade.724337e4.mp3",
+    "static/media/Background_1.png": "/Escape/static/media/Background_1.174fe7ce.png",
+    "static/media/Choose_Your_Path.mp3": "/Escape/static/media/Choose_Your_Path.750f4191.mp3",
+    "static/media/Dark_Times.mp3": "/Escape/static/media/Dark_Times.4cb3072b.mp3",
+    "static/media/Echoes_of_Time.mp3": "/Escape/static/media/Echoes_of_Time.e643d785.mp3",
+    "static/media/Echoes_of_Time_v2.mp3": "/Escape/static/media/Echoes_of_Time_v2.ebecfef7.mp3",
+    "static/media/Faceoff.mp3": "/Escape/static/media/Faceoff.a3ded39d.mp3",
+    "static/media/JailCellClose_combined.mp3": "/Escape/static/media/JailCellClose_combined.e4545275.mp3",
+    "static/media/Plato_s_Cave.mp3": "/Escape/static/media/Plato_s_Cave.3d917467.mp3",
+    "static/media/Scraping_The_Sewer.mp3": "/Escape/static/media/Scraping_The_Sewer.c7ebee72.mp3",
+    "static/media/The_Deal_is_Going_Down.mp3": "/Escape/static/media/The_Deal_is_Going_Down.a916e93a.mp3",
+    "static/media/daytripper-sos-mayday.mp3": "/Escape/static/media/daytripper-sos-mayday.9fc2afef.mp3",
+    "static/media/kwahmah-stations-broadcasting_noise-reduced.mp3": "/Escape/static/media/kwahmah-stations-broadcasting_noise-reduced.9c87a43b.mp3",
+    "static/media/logo.svg": "/Escape/static/media/logo.25bf045c.svg",
+    "static/media/morse-30wps.mp3": "/Escape/static/media/morse-30wps.816b7a83.mp3",
+    "static/media/phone-position-rotation-from-horizontal-to-vertical.svg": "/Escape/static/media/phone-position-rotation-from-horizontal-to-vertical.5f313c9f.svg",
+    "static/media/timbre_telecom_heavily_edited.mp3": "/Escape/static/media/timbre_telecom_heavily_edited.269793fa.mp3",
+    "static/media/trebblofang__creepy_background_transmission.mp3": "/Escape/static/media/trebblofang__creepy_background_transmission.e81d0458.mp3",
+    "static/media/trebblofang_pi_short.mp3": "/Escape/static/media/trebblofang_pi_short.49842426.mp3"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1fc15ef6.js",
+    "static/js/2.1efc1111.chunk.js",
+    "static/css/main.ebf5ea82.chunk.css",
+    "static/js/main.e1c16461.chunk.js"
+  ]
+}

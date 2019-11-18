@@ -132,7 +132,8 @@ a.links img{
 
 .card:hover{
 	box-shadow: 0 12px 20px rgba(0,0,0,0.19), 0 8px 8px rgba(0,0,0,0.23);
-	transform: scale(1.02);
+	/* transform: scale(1.02); */
+	/* background: #f0f0f1; */
 }
 
 
@@ -143,6 +144,7 @@ div.image{
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
+		background: white;
 }
 
 .card img{
@@ -170,16 +172,17 @@ a.button{
 	color: forestgreen;
 	text-decoration: none;
 	transition: all 0.2s;
+	user-select: none;
 }
 
-a.button:hover{
+a.button:not(.deactive):hover{
 	color: dodgerblue;
 	font-weight: bold;
 }
 
 
-.deactive {
-	color: rgb(27, 7, 7) !important;
+a.deactive {
+	color: #ddd;
 	cursor: default;
 }
 
