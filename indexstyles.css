@@ -267,9 +267,10 @@ div.progress div.dot{
     padding: 5px 0;
     border-radius: 6px;
  
-    /* Position the tooltip text - see examples below! */
+    /* Position the tooltip text */
 	position: absolute;
 	top: 40px;
+	left: 0px;
 	transform: translateX(-75px);
     z-index: 1;
 }
