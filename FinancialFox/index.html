@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+    <title>Financial Fox: Personal Finance Calculators</title>
+
+    <!-- This is our Google Arvo font and Font Awesome and other fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="fonts/font_awesome/css/font-awesome.min.css">
+	 <link rel="stylesheet" href="fonts/Generica%2520Condensed%2520Std%2520Bold/font.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar-collapse" data-offset="100">
+
+  <div id="Home">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#Home">
+				 <img src="images/fox_head.png" width="50px" margin="0px" padding="0px">
+			 </a>
+          <a id="nav_logo_text" class="navbar-brand" href="#Home">
+				 <img src="images/financial_fox2.png" alt="Financial Fox" title="Financial Fox">
+			  </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#Home">HOME</a></li>
+            <li><a href="#tools-calc">TOOLS</a></li>
+            <li><a href="#Recommendations">RECOMMENDATIONS</a></li>
+            <li><a class="fancybox_ContactUs" href="SidePages/ContactUs/contact_form.html" target="_blank">CONTACT US</a></li>
+          </ul>
+            <style>
+                .fancybox-skin{
+                background: #800000;
+                }
+            </style>
+          </div>
+        </div><!--/.nav-collapse -->
+    </nav>
+  </div>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <div class="top-logo">
+          <img src="images/welcome.png" width="1000px">
+        </div>
+        <div class="middle-logo">
+          <img src="images/fox_head.png" width="150px" alt="Financial Fox Logo">
+        </div>
+      </div>
+    </div>
+
+  <div id="tools-calc">
+    <div class="calculators">
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-4">
+          <a href="#Offers"><span class="fa-stack fa-5x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-users fa-stack-1x fa-inverse"></i>
+          </span></a>
+            <h2>Compare Job Offers</h2>
+            <p class="blurb"> A job offer from another province or even switching between hourly and salary positions can be misleading. Compare offers and find out the difference now...</p>
+              <a class="fancybox_offer appButton" title="Job Offer Web App" href="Income_Calculator/html_provincial_income.html">
+					  <p class="btn btn-default" role="button">Open in Browser &raquo;</p>
+              </a>
+          </div>
+          <div class="col-md-4">
+          <a href="#TFSA"><span class="fa-stack fa-5x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-line-chart fa-stack-1x fa-inverse"></i>
+          </span></a>
+            <h2>TFSA Calculator</h2>
+            <p class="blurb"> Your TFSA contribution limit depends on many factors including past contributions and withdrawals. Calculate your contribution room in a few simple clicks. </p>
+              <a class="fancybox_tfsa appButton" title="TFSA Calculator Web App" href="TFSA_Calculator/html_tfsa_calculator.html">
+            		<p class="btn btn-default" role="button">Open in Browser &raquo;</></p>
+              </a>
+            <!--<p><a class="btn btn-default" role="button" href="TFSA_Calculator_WFA.exe" download="TFSA_Calculator_WFA.exe" target="_blank">Download to Windows &raquo;</a></p>-->
+          </div>
+
+          <div class="col-md-4">
+          <a href="#Balance"><span class="fa-stack fa-5x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-pie-chart fa-stack-1x fa-inverse"></i>
+          </span></a>
+            <h2>Portfolio Rebalancing</h2>
+            <p class="blurb">Keeping a balanced equity portfolio is important. Use this tool to determine how to balance each item in your portolio using their current market values.</p>
+              <a class="fancybox_portfolio appButton" title="Balanced Portfolio App" href="Rebalance_Calculator/">
+                  <p class="btn btn-default" role="button">Open in Browser &raquo;</p>
+              </a>
+              <style>
+                  .fancybox-skin {
+                      background: #800000;
+                  }
+
+                  h4 {
+                      color: #ffffff;
+                      width: 15%;
+                      text-align: center;
+                      margin: auto;
+                  }
+              </style>
+            <a class="btn btn-default appButton" role="button" href="Portfolio_Rebalance_WFA.exe" download="Portfolio_Rebalance_WFA.exe" target="_blank">Download to Windows &raquo;</a>
+          </div>
+        </div>
+        <div class="row">
+         <div class="col-md-4"></div>
+         <div class="col-md-4">
+          <a href="#FuelSavings"><span class="fa-stack fa-5x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+          </span></a>
+            <h2>Fuel Savings Calculator</h2>
+            <p class="blurb">Thinking about buying a car? Wondering if those 2 extra MPG are worth it? The answer may surprise you. Find out how much you will save or spend on gas.</p>
+            <a class="fancybox_FuelSavings appButton" title="Fuel Savings Web App" href="HTML_FuelSavings.html">
+                <p class="btn btn-default" role="button">Open in Browser &raquo;</p>
+            </a>
+            <style>
+                .fancybox-skin {
+                    background: #800000;
+                }
+                h4{
+                    color: #ffffff;
+                    width: 15%;
+                    text-align:center;
+                    margin: auto;
+                }
+            </style>
+
+            <a class="btn btn-default appButton" role="button" href="Fuel_Savings_WFA.exe" download="Fuel_Savings_WFA.exe" target="_blank">Download to Windows &raquo;</a>
+         </div>
+          <div class="col-md-4"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="more-tools">
+        <img src="images/more-tools.png" alt="More Financial Tools Coming Soon">
+      </div>
+
+ <div id="Recommendations">
+    <div class="articles">
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-4">
+          <a href="#"><span class="fa-stack fa-5x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-book fa-stack-1x fa-inverse"></i>
+          </span></a>
+            <h2>Recommended Books</h2>
+            <a class="fancybox2" id="box2" title="Recommended Books" href="books.html">
+                <p class="btn btn-default" role="button">Click to View &raquo;</p>
+            </a>
+            <style>
+                .fancybox2 .fancybox-skin{
+                    background: #EBDDE2;
+                }
+                h4{
+                    color: #ffffff;
+                    width: 15%;
+                    text-align:center;
+                    margin: auto;
+                }
+            </style>
+          </div>
+
+          <div class="col-md-4">
+          <a href="#"><span class="fa-stack fa-5x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-desktop fa-stack-1x fa-inverse"></i>
+          </span></a>
+            <h2>Recommended Websites</h2>
+            <a class="fancybox2" id="box2" title="Recommended Websites" href="websites.html">
+                <p class="btn btn-default" role="button">Click to View &raquo;</p>
+            </a>
+            <style>
+                .fancybox2 .fancybox-skin{
+                    background: #EBDDE2;
+                }
+                h4{
+                    color: #ffffff;
+                    width: 15%;
+                    text-align:center;
+                    margin: auto;
+                }
+            </style>
+          </div>
+
+          <div class="col-md-4">
+          <a href="#"><span class="fa-stack fa-5x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-external-link-square fa-stack-1x fa-inverse"></i>
+          </span></a>
+            <h2>Recommended Software</h2>
+            <a class="fancybox2" id="box2" title="Recommended Websites" href="Software.html">
+                <p class="btn btn-default" role="button">Click to View &raquo;</p>
+            </a>
+            <style>
+                .fancybox2 .fancybox-skin{
+                    background: #EBDDE2;
+                }
+                h4{
+                    color: #ffffff;
+                    width: 15%;
+                    text-align:center;
+                    margin: auto;
+                }
+            </style>
+          </div>
+      </div>
+         <div class="row">
+           <div class="col-md-4"></div>
+           <div class="col-md-4">
+            <a><span class="fa-stack fa-5x">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-newspaper-o fa-stack-1x fa-inverse"></i>
+            </span></a>
+              <h2>Recommended Articles</h2>
+              <a class="" id="box2" title="Recommended Articles">
+                <p class="inactive btn btn-default" role="button">Coming Soon &raquo;</p>
+              </a>
+<!--
+              <style>
+                .fancybox2 .fancybox-skin{
+                    background: #EBDDE2;
+                }
+                h4{
+                    color: #ffffff;
+                    width: 15%;
+                    text-align:center;
+                    margin: auto;
+                }
+              </style>
+-->
+           </div>
+           <div class="col-md-4"></div>
+          </div>
+
+            <div id="back-to-top">
+              <a href="#Home"><i class="fa fa-3x fa-arrow-circle-up" title="Back to Top"></i></a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+      <footer>
+        <div class="container">
+          <img src="images/footer.png" title="Here to Help" alt="Financial Fox: Here to Help">
+          <p>&copy; Financial Fox 2015</p>
+          </div>
+
+      </footer>
+
+<!-- ================================================== -->
+<!--    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>-->
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+
+    <!--This links to the FANCYBOX CODE-->
+    <link rel="stylesheet" href="fancyBox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancyBox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <script type="text/javascript" src="js/JS_lightBoxScript.js"></script>
+
+    <!--This links to the SWEETALERT CODE-->
+    <script src="lib/sweet-alert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="lib/sweet-alert.css">
+    <script src="js/tracking.js"></script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Provincial Income Calculator</title>
+</head>
+
+<body>
+  <!-- Stylesheets -->
+    <!--    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="css_provincial_income.css" rel="stylesheet">
+
+    <!-- Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300' rel='stylesheet' type='text/css'>
+  <!-- - -->
+    <div id="window" class="">
+      <div id="banner_top" class="row">
+        <h1>Job Offers</h1>
+      </div>
+      <form>
+       <fieldset id="top">
+        <div class="row">
+             <div class="col-xs-12 col-md-6 left_side">
+              <h4 class="offer_title">One</h4>
+              <label for="province1">Province:</label>
+              <select name="province1" id="province1">
+                <option value="AB">Alberta</option>
+                <option value="BC">British Columbia</option>
+                <option value="MB">Manitoba</option>
+                <option value="NB">New Brunswick</option>
+                <option value="NL">Newfoundland</option>
+                <option value="NS">Nova Scotia</option>
+                <option value="ON">Ontario</option>
+                <option value="PE">Prince Edward Island</option>
+                <option value="QC">Quebec</option>
+                <option value="SK">Saskatchewan</option>
+                <option value="NT">Northwest Territories</option>
+                <option value="NU">Nunavut</option>
+                <option value="YT">Yukon</option>
+              </select>
+              <label for="income1">Income:</label>
+               <span class="currency">$</span><input name="income1" class="income" type="number" step="1" min="0" value="0">
+               <br>
+               <input type="checkbox" name="paytype1" value="Salary"><label class="box">Salary</label>
+               <input type="checkbox" name="paytype1" value="Hourly"><label class="box">Hourly</label>
+            </div>
+            <div class="col-xs-12 col-md-6 right_side">
+              <h4 class="offer_title">Two</h4>
+              <label for="province2">Province:</label>
+              <select name="province2" id="province2">
+                <option value="AB">Alberta</option>
+                <option value="BC">British Columbia</option>
+                <option value="MB">Manitoba</option>
+                <option value="NB">New Brunswick</option>
+                <option value="NL">Newfoundland</option>
+                <option value="NS">Nova Scotia</option>
+                <option value="ON">Ontario</option>
+                <option value="PE">Prince Edward Island</option>
+                <option value="QC">Quebec</option>
+                <option value="SK">Saskatchewan</option>
+                <option value="NT">Northwest Territories</option>
+                <option value="NU">Nunavut</option>
+                <option value="YT">Yukon</option>
+              </select>
+              <label for="income2">Income:</label>
+              <span class="currency">$</span><input name="income2" class="income" type="number" step="1" min="0" value="0">
+              <br>
+             <input type="checkbox" name="paytype2" value="Salary"><label class="box">Salary</label>
+             <input type="checkbox" name="paytype2" value="Hourly"><label class="box">Hourly</label>
+          </div>
+        </div>
+        </fieldset>
+        <fieldset id="bottom">
+         <div class="row">
+          <div class="col-xs-12 col-md-6 left_side">
+             <h4 id="job1_details"></h4>
+             <label for="taxes1">Total Taxes Paid:</label>
+             <output name="taxes1"></output>
+             <label for="netincome1">Annual Net Pay:</label>
+             <output name="netincome1"></output>
+          </div>
+          <div class="col-xs-12 col-md-6 right_side">
+             <h4 id="job2_details"></h4>
+             <label for="taxes2">Total Taxes Paid:</label>
+             <output name="taxes2"></output>
+             <label for="netincome2">Annual Net Pay:</label>
+             <output name="netincome2"></output>
+          </div>
+         </div>
+           <h2 id="OutputMessage"></h2>
+<!--           The Alberta job pays $21312,32 more!-->
+          <a href="http://www.cra-arc.gc.ca/tx/ndvdls/fq/txrts-eng.html" target="_blank"><h4>For more details on the tax brackets click here.</h4></a>
+        </fieldset>
+        <button id="calculate" type="button" class="btn btn-info calculate">Calculate</button>
+<!--        <h4 id="Disclaimer">Disclaimer</h4>-->
+        <img id="Disclaimer" src="../images/info.svg" alt="Disclaimer" title="disclaimer">
+      </form>
+    </div>
+
+  <!--  Java Script and Jquery Extensions-->
+  <!--  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>-->
+  <script src="../js/jquery-1.12.3.min.js"></script>
+<!--   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script> -->
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="js_provincial_income.js"></script>
+  <!--  Sweetalert -->
+  <link rel="stylesheet" href="../lib/sweet-alert.css" type="text/css">
+  <script src="../lib/sweet-alert.min.js"></script>
+  <script src="../js/tracking.js"></script>
+  <!-- ----------- -->
+
+
+</body>
+</html>

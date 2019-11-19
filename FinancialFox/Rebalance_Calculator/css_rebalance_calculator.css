@@ -1,0 +1,417 @@
+body {
+  background-color: #4AB4E8;
+  background-color: #0F2248;
+}
+
+form{
+  position: relative;
+  height:500px;
+}
+
+#banner_top{
+  height: 90px;
+  background-color: #164C88;
+  margin: 0px;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  color: white;
+  font-size: 40px;
+  margin-left: 10px;
+}
+
+#window {
+  max-width: 700px;
+  min-width: 500px;
+  background: #1C578F;
+  border-radius: 0px;
+  max-height: 700px;
+  padding-bottom: 1px;
+  width: 90vw;
+  height: 600px ;
+  margin: auto;
+  margin-top: 5vh;
+  border-top: medium solid #75C809;
+}
+
+#top{
+    -webkit-box-shadow: 0px -3px 5px 0px rgba(17,60,108,.4);
+    -moz-box-shadow: 0px -3px 5px 0px rgba(17,60,108,.4);
+    box-shadow: 0px -3px 5px 0px rgba(17,60,108,.4);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+label {
+  display: block;
+  color: white;
+  text-transform:capitalize;
+  font-family: 'Roboto' sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+/*  font-style: italic;*/
+  text-align: left;
+  margin-left: 10%;
+  margin-top: 6px;
+  padding: 8px 0px 5px;
+  padding-left: 5px;
+  height: 36px;
+}
+
+select, input {
+  background-color: #164C88;
+  color: #AECCEB;
+  border: 2px solid #0C3E78;
+  height: 36px;
+  font-size: 18px;
+  border-radius: 5px;
+  width: 70%;
+  max-width: 196px;
+  min-width: 160px;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
+output{
+  background-color: #164C88;
+  color: #AECCEB;
+  border: 2px solid #0C3E78;
+  height: 36px;
+  font-size: 18px;
+  border-radius: 5px;
+  max-width: 196px;
+  width: 70%;
+  min-width: 160px;
+  margin: 10px auto 0px auto;
+  text-align: center;
+  padding: 1px;
+}
+
+#birthdate {
+  width: 10%;
+  max-width: 196px;
+  min-width: 171px; 
+  text-align: end;
+}
+
+/*.left_side{
+  padding-left: 5%;
+  border-right: medium dashed #75C809;
+  text-align: right;
+  padding-bottom: 10px;
+  padding-top: 4px;
+}
+
+.right_side{
+  padding-right: 5%;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 4px;
+}*/
+
+.currency{
+  color: white;
+  font-size: 14px;
+  margin-right: -9px;
+  border: 2px solid #0C3E78;
+  padding: 9px 12px 7px 12px;
+  border-radius: 5px;
+  margin-top: -10px;
+}
+
+input[type='number']{
+  padding-left: 5px;
+  text-align:center;
+}
+
+#bottom {
+  background-color: #21649B;
+  -webkit-box-shadow: 0px -3px 5px 0px rgba(17,60,108,.4);
+  -moz-box-shadow: 0px -3px 5px 0px rgba(17,60,108,.4);
+  box-shadow: 0px -3px 5px 0px rgba(17,60,108,.4);
+  padding-top: 2px;
+  display: none;
+}
+
+input[type="checkbox"]{
+    background-color: #164C88;
+    border: 2px solid #0C3E78;
+    height: 16px;
+    font-size: 12px;
+    border-radius: 5px;
+    width: 30px;  
+    vertical-align: sub;
+    margin-top: 10px;
+}
+
+.box {
+  color: #75C809;
+  display: inline;
+  margin-right: 5px;
+  margin-left: 1px;
+  line-height: 18px;
+  padding: 0px;
+  padding-bottom: 2px;
+}
+
+.calculate {
+  margin: 20px auto;
+  margin-bottom: 20px;
+  width: 150px;
+  height: 40px;
+  font-weight: 600;
+  display: none;
+}
+
+.continue, .calculate {
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+  margin: 20px auto;
+  margin-bottom: 15px;
+  margin-right: 20px;
+  width: 150px;
+  height: 40px;
+  font-weight: 600;
+}
+
+h2{
+  color: white;
+  text-align: center;
+}
+
+h4, h3{
+  text-align: center;
+  color: #5BC0DE;
+}
+
+#subbanner{
+   text-align: left;
+   margin-left: 30px;
+   margin-top: -8px;
+}
+
+#OutputMessage {
+  margin-top: 5px;
+}
+
+.offer_title{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+/*  color: #75C809;*/
+}
+
+#Disclaimer {
+  position: absolute;
+  left: 10px;
+  bottom: 3px;
+}
+
+#DisclaimerText {
+  position: absolute;
+  left:35px;
+  bottom: -10px;
+}
+
+#Disclaimer:hover , #DisclaimerText:hover {
+  cursor: pointer;
+}
+
+a #moreinfo:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.instruction {
+	color: white;
+	font-size: 2em;
+	text-align: center;
+}
+
+#itemcounter{
+	position: absolute;
+    left: 50%;
+    margin-left: -45.5px;
+    width: 91px;
+	 min-width: 91px;
+    text-align: center;
+	 height: 50px;
+    font-size: 2em;
+    font-weight: 600;
+	 padding-left: 22px;
+}
+
+#page1 .instruction {
+/*	margin-top: 120px;*/
+	margin-top: 20px;
+}
+#page1 h3 {
+	margin-top: 120px;
+}
+
+/* Added for this app */
+
+.page{
+	height: 425px; /* prev 500 and before that 410 */
+	padding: 0px 10px;
+   overflow: overlay; /* Makes extra content scroll */
+	overflow-x: hidden;
+}
+
+.itemname{
+  text-align: center;
+}
+
+output{
+  margin-right: 0px;
+  text-align: center;
+}
+
+.item_buysell{
+	margin-right: auto;
+}
+
+input{
+  margin-left: 0px;
+  text-align: center;
+}
+.subinstruction{
+  	color: white;
+	font-size: 1em;
+	text-align: center;
+    margin-top: -10px;
+    margin-bottom: 1px;
+}
+
+#page2 input{
+  margin-left: auto;
+}
+
+#scrollicon{
+	 display: block;
+    position: absolute;
+    bottom: 70px;
+    right: 35px;
+    color: red;
+}
+
+/* ---End of "Added for this app" */
+
+
+@media (max-width:800px){
+  #window{
+    margin-top: 10px;
+  }
+}
+
+@media (max-width:550px){
+	#window{
+    min-width: 320px;
+    width: 100vw;
+    margin: auto;
+  }
+	.left_side{
+    padding: 0px;
+  }
+	.right_side{
+    padding: 0px 2px 0px 2px;
+    text-align: left;
+  }
+	.calculate{
+    margin-bottom: 40px;
+  }
+	#DisclaimerText{
+    bottom: -8px;
+  }
+	#Disclaimer{ 
+		
+  }
+	input{
+    width: 100%;
+	 min-width: 90px;
+	 margin-top: 6px;
+	 font-size: 14px;
+	 line-height: 30px;
+  }
+	label{
+    font-weight: 400;
+  }
+	.currency{
+    margin-right: 16px;
+    padding: 9px 8px 7px 8px;
+  }
+  
+	output{
+    text-align: center;
+    margin: 6px auto 0px auto;
+    font-size: 14px;
+	 line-height: 30px;
+    min-width: 88px;
+	 width: 100%;
+  }
+	h1{
+		font-size: 34px;
+  }
+	h2{
+    font-size: 20px;
+  }
+	#subbanner{
+   text-align: left;
+   margin-left: 44px;
+   margin-top: -8px;
+	font-size: 14px;
+  }
+	#itemcounter{
+		padding: 1px;
+	}
+}
+
+
+@media (max-width:400px){
+  #window{
+    min-width: 310px;
+    margin: auto;
+  }
+  h4{
+    font-size: 14px;
+  }
+  h2{
+    font-size: 15px;
+  }
+  body{
+    font-size: 12px;
+  }
+  #DisclaimerText{
+    bottom: -7px;
+  }
+  
+}
+
+@media (max-height:568px){
+	#window{
+		height: 480px;
+		min-height: 480px;
+	}
+	form{
+		height: 385px;
+		min-height: 380px;
+	}
+	.page{
+		height: 330px;
+	}
+	.continue, .calculate{
+		margin-bottom: 5px;
+		margin-right: 5px;
+		width: 100px;
+	}
+	#page1 h3{
+		margin-top:  60px;
+	}
+	p#scrollicon{
+    bottom: 22px !important; 
+    left: 120px !important;
+	}
+}

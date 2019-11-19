@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'GenericaCondensedStd-Bd';
+  src: url('GenericaCondensedStd-Bd.eot');
+  src: url('GenericaCondensedStd-Bd.woff2') format('woff2'),
+       url('GenericaCondensedStd-Bd.woff') format('woff'),
+       url('GenericaCondensedStd-Bd.ttf') format('truetype'),
+       url('GenericaCondensedStd-Bd.svg#GenericaCondensedStd-Bd') format('svg'),
+       url('GenericaCondensedStd-Bd.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

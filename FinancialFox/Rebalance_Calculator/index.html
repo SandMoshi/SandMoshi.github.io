@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Rebalancing App</title>
+</head>
+
+<body>
+  <!-- Stylesheets -->
+<!--    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="css_rebalance_calculator.css" rel="stylesheet">
+
+    <!-- Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300' rel='stylesheet' type='text/css'>
+  <!-- - -->
+    <div id="window" class="">
+      <div id="banner_top" class="row">
+        <h1>Portfolio Balancing</h1>
+        <h4 id="subbanner">Get your portfolio back on track!</h4>
+      </div>
+      <form>
+       <fieldset id="page1" class="page">
+        <div>
+             <h3 class="offer_title">First, tell us about your portfolio...</h3>
+			 <p class="instruction">How many items are you balancing?</p>
+			 <input id="itemcounter" type="number" min="2" value="2" step="1" max="100"></input>
+		</div>
+        </fieldset>
+		<!-- Page 2 -->
+  	    <fieldset id="page2" class="page" style="display:none;">
+			<p class="instruction">Please give each item a name:</p>
+			<p id="scrollicon" style="display:none;">Scroll Down</p>
+	    </fieldset>
+        <!-- Page 3 -->
+  	    <fieldset id="page3" class="page" style="display:none;">
+			<p class="instruction">What are your desired targets?</p>
+            <p class="subinstruction">As % of overall portfolio</p>
+			<p id="scrollicon" style="display:none;">Scroll Down</p>
+            <div class="">
+                <div id="page3leftside" class="left_side col-xs-6">
+                </div>
+                <div id="page3rightside" class="right_side col-xs-6">
+                </div>
+            </div>
+	    </fieldset>
+        <fieldset id="page4" class="page" style="display:none;">
+			<p class="instruction">How much is each item currently worth?</p>
+            <p class="subinstruction">Dollar Amounts Only</p>
+			<p id="scrollicon" style="display:none;">Scroll Down</p>
+            <div class="row">
+                <div id="page4leftside" class="left_side col-xs-6">
+                </div>
+                <div id="page4rightside" class="right_side col-xs-6">
+                </div>
+            </div>
+	    </fieldset>
+
+        <fieldset id="page5" class="page" style="display:none;">
+			<p class="instruction">Are You Investing More Money?</p>
+            <p class="subinstruction">Additional Dollar Amount to be Invested</p>
+            <input id="item_investing" type="number" min="0" style="margin:auto" placeholder="$0.00" class="item_investing required"></input>
+            <p class="subinstruction" style="margin-top:0px; color: #5BC0DE;">If you are not contributing, type in 0.</p>
+			<p id="scrollicon" style="display:none;">Scroll Down</p>
+	    </fieldset>
+
+        <fieldset id="page6" class="page" style="display:none;">
+			<h3>Here are the changes required..</h3>
+<!--			<p class="instruction">Here are the changes required..</p>-->
+         <p class="subinstruction">You need to buy(+) or sell(-) the following amounts:</p>
+			<p id="scrollicon" style="display:none;">Scroll Down</p>
+			<div class="row">
+                <div id="page6leftside" class=".left-side col-xs-6">
+                </div>
+                <div id="page6rightside" class=".right-side col-xs-6">
+                </div>
+         </div>
+	    </fieldset>
+
+		<button id="continue" type="button" class="btn btn-info continue pulseGreenBorder">Next</button>
+		<button id="calculate" type="button" class="btn btn-info calculate" style="display:none;">Calculate</button>
+		<h4 id="DisclaimerText">Disclaimer</h4>
+		<img id="Disclaimer" src="../images/info.svg" alt="Disclaimer" title="disclaimer">
+
+      </form>
+    </div>
+
+<!--    Java Script and Jquery Extensions -->
+  <script src="../js/jquery-2.1.3.js"></script>
+<!--  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>-->
+  <script src="../js/bootstrap.min.js"></script>
+<!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>-->
+<!--    Sweetalert -->
+  <link rel="stylesheet" href="../lib/sweet-alert.css" type="text/css">
+  <script src="../lib/sweet-alert.min.js"></script>
+
+  <script src="../Rebalance_Calculator/js_rebalance_calculator.js"></script>
+  <script src="../js/tracking.js"></script>
+</body>
+</html>

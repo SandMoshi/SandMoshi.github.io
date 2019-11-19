@@ -1,0 +1,102 @@
+.logo{  
+  width: 100%;
+  max-width: 300px;
+}
+
+.Studio{
+  margin-top: 96px; /* 270px - 77px then divide by 2 */
+}
+
+.SimpleTax{
+  margin-top: 79.5px; 
+}
+
+.turbotax{
+  height: 100px;
+  width: inherit;
+  margin-top: 85px; 
+}
+
+h2 {
+	font-size: 50px;
+	margin-top: 25px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+body {
+	background-color: #FFF5EE;
+}
+
+.left-side{
+  text-align: center;
+}
+
+.right-side {
+	display: inline-block;
+	margin: 0;
+	text-align: center;
+}
+
+.right-side p {
+	color: black;
+	padding-top: 50px;
+	padding-bottom: 50px;
+    text-align: center;
+}
+
+.right-side p b:first-child{
+   font-size: 20px;
+}
+
+hr {
+	width: 400px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: maroon;
+}
+
+.row {
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 30px;
+	background-color: white;
+    min-height: 270px;
+}
+
+.ynab {
+	margin-top: 45px;
+}
+
+.logo{
+	  width: 300px;
+   height: 100px;
+}
+
+@media (max-width:800px){
+   .logo { 
+     margin-top: 20px;
+				 max-width: 100%;
+   }   
+} 
+
+@media (max-width:990px){
+   .logo { 
+     margin-top: 30px;
+			 	max-width: 100%;
+				 height: auto;
+   } 
+  .right-side p{
+    padding: 25px 10%;
+  }
+	
+	h2{
+		font-size: xx-large;
+	}
+  
+} 

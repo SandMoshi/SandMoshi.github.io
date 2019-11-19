@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Contact Us!</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+    <style>
+        body {
+            background-color:#ffffff;
+        }
+    </style>
+    <form action="contact.php" method="post" target="_parent">
+        Your Name* :<br />
+        <input type="text" name="cf_name" required/> 
+        <br />
+        <br />
+        Your Email* :<br />
+        <input type="email" name="cf_email" required/>
+        <br />
+        <br />
+        Message* :<br />
+        <textarea name="cf_message"  required></textarea>
+        <style>
+            textarea{
+                width: 400px;
+                height:200px;
+            }
+        </style>
+        <br />
+        <input type="submit" value="Send" id="Submit"/>
+        <input type="reset" value="Clear " />
+        <script>
+            $('#Submit').click(function () {
+             parent.jQuery.fancybox.close();
+                  });
+        </script>
+
+    </form>
+
+
+</body>
+</html>

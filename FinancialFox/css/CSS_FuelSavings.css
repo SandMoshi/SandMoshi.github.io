@@ -1,0 +1,191 @@
+@import "http://fonts.googleapis.com/css?family=Raleway";
+
+/*---------CURRENCY JQUERY PLUGIN-------*/
+.currency {
+            padding-left:12px;
+        }
+
+.currency-symbol {
+            position:absolute;
+            padding: 3px 5px;
+        }
+/*--------------------------------------*/
+
+body{
+  overflow-x: auto !important;
+  margin-left: 12px;
+}
+
+body > div.fancybox-overlay.fancybox-overlay-fixed > div > div > div > div {
+  height: 813px !important;
+}
+
+div#container{
+    margin: 0px 0px;
+    width: 875px;
+    height:780px;
+    color:gray;
+    background-color:#800000;
+    border-radius:20px;
+}
+.Col{
+    display: inline-table;
+}
+.Row{
+    display:block;    
+}
+h4{
+    color:#ffffff;
+    height: 20px;
+    margin: 20px 5px;
+    font-family: 'Raleway', sans-serif;
+}
+#B2{
+    margin-top:23px;
+}
+h3{
+    color:#ffffff;
+    height: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+h1{
+    color:#ffffff;
+    height: 20px;
+    padding-top:20px;
+    margin-top: 5px;
+    font-family: 'Raleway', sans-serif;
+}
+.Titles {
+        text-align:center;
+}
+#Top_Row{
+    height: 30%;
+}
+#C_Top{
+    display: inline-table;
+    margin-left:10px;
+    width:520px;
+}
+#B3{
+    display: block;
+}
+#C3_Top, #C3_Middle1, #C3_Middle2, #C3_Middle3{
+    width: 105px;
+}
+#C1_Top{
+}
+.subCol_C{
+    width: 200px;
+    display: inherit;
+}
+.Col_C input{
+    height: 17px;
+    margin-bottom:20px;
+}
+.Col_C select{
+    margin:17px 10px 17px 0;
+    padding: 2px;
+}
+.Col_A{
+    width: 75px;
+    margin-left:25px;
+}
+.Col_B{
+    width: 225px;
+}
+.Col_C{
+    width: auto;
+}
+.Vehicle{
+    width: 100px;
+    text-align:center;
+    border-radius:3px;
+}
+.gasprice{
+    padding: 0 0 0 15px ;
+    margin: 0px 114px 0px 0px;
+    width:64px;
+    border-radius:3px;
+}
+#GasPrice3{
+    margin-right:0px;
+    margin-left:-2px;
+}
+.Economy{
+    width: 100px;
+    text-align:center;
+    border-radius: 3px;
+}
+#button_calc{
+    height: 60px;
+    width: 408px;
+    margin: 0 40px;
+    border-radius: 10px;
+    border-style:none;
+    font-size: 16px;
+}
+.MiddleRow{
+/*    height: 140px;*/
+    display: block;
+}
+.labelA, .labelB,.labelC{
+    display: block;
+    width:180px;
+    margin-left: 25px;
+    font-family: 'Raleway', sans-serif;
+}
+.C_Middle{
+
+}
+.Cost, .Savings{
+    display: block;
+    margin: 18px 0px;
+    width: 104px;
+    height: 17px;
+    background-color:beige;
+    text-align: center;
+    border-style:none;
+    padding: 3px 0;
+}
+.B_Middle{
+    width: 129px;
+}
+.C_Middle{
+    width:196px;
+
+}
+.BackgroundBox{
+    width: 500px;
+    height:80px;
+    background-color:aqua;
+    position: relative;
+}
+#Version_Tag{
+    margin: 0px 20px 0 0; 
+    text-align: right;
+    display: inline;
+    float: right;
+    width: 25%;
+    font-family: 'Raleway', sans-serif;
+}
+#Disclaimer{
+    display: inline;
+    padding-bottom:20px;
+    margin: 20px 60px 0 0 ;
+    color:white;
+    float:right;
+    width: 25%;
+    text-align:center;
+    text-decoration:underline;
+    cursor: pointer;
+}
+.currency-input{
+    display: inline-block;
+}
+
+hr {
+  border-color: pink;
+  border-width: 1px;
+  width: 90%;
+  margin: 10px auto 10px auto;
+}

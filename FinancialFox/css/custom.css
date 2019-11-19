@@ -1,0 +1,367 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+}
+
+.navbar {
+  background-color: black;
+}
+
+ul.nav {
+	font-family: 'Helvetica', courier, serif;
+	font-size: 13px;
+	font-weight: bolder;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: white;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #C62828;
+}
+
+.navbar-logo img {
+	position: relative;
+	bottom: 10px;
+	left: 7px;
+}
+ 
+#Home > nav > div > div.navbar-header > a:nth-child(2){
+	/*	Padding around the small fox head in the navbar*/
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+#nav_logo_text {
+	/* Padding around the financial fox text image in the navbar	*/
+	padding-top: 12px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.jumbotron {
+	text-align: center;
+	background-image: url(../images/maple_leaf_4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+	color: black;
+	padding-bottom: 3px;
+  height: 100vh;
+  min-height: 620px;
+  position: relative;
+  
+}
+
+.top-logo img {
+/*	margin-bottom: 25px;*/
+  padding-top: 15vh;
+  padding-bottom: 10px;
+}
+
+.middle-logo img {
+    position: absolute;
+    bottom: 15vh;
+    left: 50%;
+    margin-left: -75px;
+}
+
+.bottom-logo img {
+	margin-top: 0;
+	margin-bottom: 20px;
+	padding: 0;
+	bottom: 20px;
+  width: 20%
+}
+
+.btn-lg {
+	font-size: 36px;
+}
+
+.btn-default {
+  margin-bottom: 15px;
+}
+
+	
+.fa-stack {
+	color: maroon;
+	
+}
+
+#tools-calc {
+  margin-top: 0px;
+}
+
+
+.calculators {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	text-align: center;
+  padding-top: 10px;
+  padding-bottom: 13px;
+}
+
+.calculators p {
+	text-align: justify-center;
+/*   display: inline-block;*/
+}
+
+.blurb{
+	 max-width: 300px;
+    text-align: justify;
+    min-height: 90px;
+	 display: block;
+	 margin: auto;
+	 text-align-last: center;
+	 -mox-text-align-last: center;
+}
+
+.appButton{
+	display: inline-block;
+}
+
+#FuelSavings {
+  background-image: url(../images/HK_Portland_Street_Night_2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#FuelSavings .container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding-bottom: 20px;
+}
+
+#FuelSavings h2 {
+  color: white;
+  font-size: 45px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  text-decoration: underline;
+}
+
+#FuelSavings img {
+  display: inline;
+  padding-bottom: 40px;
+}
+
+#TFSA {
+  background-color: white;
+}
+
+#TFSA .container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+#TFSA h2 {
+  color: maroon;
+  padding-top: 15px;
+  padding-bottom: 45px;
+  font-size: 50px;
+  text-decoration: underline;
+}
+
+#TFSA img {
+  display: inline;
+  padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#TFSA h4 {
+  color: black;
+  font-weight: bolder;
+}
+
+#Balance {
+  background-image: url(../images/The_Peace_Bridge_in_Calgary_an_HDR_2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#Balance .container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  width: 90%;
+}
+
+#balance .calculator {
+  margin-top: 0px;
+}
+
+#Balance h2 {
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  font-size: 50px;
+  text-decoration: underline;
+}
+
+#Balance img {
+  display: inline;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 55px;
+}
+
+
+.more-tools {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.articles {
+	text-align: center;
+  padding-bottom: 45px;
+  position: relative;
+}
+
+.articles p {
+	text-align: justify-center;
+}
+
+
+.books {
+  text-align: left;
+  display: inline;
+  margin: 0px;
+}
+
+.books p {
+  width: 500px;
+}
+
+.fancybox2 {
+  background-color: white;
+}
+
+footer {
+  padding: 10px;
+  background-color: #800000;
+	position: relative;
+}
+
+footer p {
+  position: absolute;
+  color: white;
+  display:inline;
+  margin: 0px;
+	right: 20px;
+	bottom: 5px;
+}
+
+#back-to-top {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+}
+
+#back-to-top a {
+  color: black;
+}
+
+footer > div > img {
+    width: 19%;
+    margin-top: 6px;
+}
+
+
+.inactive{
+  cursor: not-allowed;
+  background-color: lightgray;
+  color: grey;
+}
+
+.inactive:hover{
+  background-color: lightgray;
+  color: gray;
+}
+
+/* Responsive styling*/
+
+@media (max-width: 1452px) {
+
+  .top-logo img {
+    width: 85%;
+    position: relative;
+    right: 10px;
+  }
+
+}
+
+@media (max-width: 992px) {
+
+  .top-logo img {
+    width: 80%;
+  }
+	footer > div > img {
+    width: 30%;
+  }	
+}
+
+@media (max-width: 767px) {
+
+  .top-logo img {
+    width: 80%
+  }
+  
+  .jumbotron{
+    min-height: 400px;
+  }
+  footer > div > img {
+    width: 30%;
+
+	}
+}
+
+@media (max-width: 545px) {
+	.more-tools img {
+		width: 80%;
+	}
+  
+  #nav_logo_text{
+    /*  We dont want the nabvar text logo to show up on small screens since it wont fit  */
+    display: none;
+  }
+  
+  .top-logo > img {
+      min-width: 320px;
+      left: 0px;
+  }
+  
+  .jumbotron {
+    padding-left:  0px;
+    padding-right: 0px;
+    min-height: 400px;
+  }
+  
+  .container {
+    padding-left:  0px;
+    padding-right: 0px;1
+}
+  .row {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+  
+
+@media (max-width: 400px) {
+
+  .top-logo {
+  	margin-bottom: 0px;
+  }
+
+  .middle-logo img{
+    margin-top: 0px;
+  }
+  
+  footer > div > img {
+    width: 50%;
+  }
+}

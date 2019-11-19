@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Vehicle Fuel Savings Calculator</title>
+
+    <!-- Link Stylesheet and JS for this page -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link href="/css/CSS_FuelSavings.css" rel="stylesheet" />
+    <script type="text/javascript" src="/js/JS_FuelSavings.js"></script>
+
+    <!--This links to the SWEETALERT CODE-->
+    <script src="lib/sweet-alert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="lib/sweet-alert.css">
+</head>
+<body>
+    <div id="container">
+        <h1 class="Titles">Fuel Savings Calculator</h1>
+        <h3 class="Titles">Compare different vehicles to see which one costs the most to drive!</h3>
+
+        <div id="Form1">
+            <!--==================  "Top" Row  =========================================-->
+            <div id="Top_Row" class="Row">
+                <!--================== Column A =========================================-->
+                <div id="A_Top" class="Col_A Col">
+                    <h4 id="Step1A" class="Row_Text Row_TextA" title="Step 1.">Step 1.</h4>
+                    <h4 id="Step2A" class="Row_Text Row_TextA" title="Step 2.">Step 2.</h4>
+                    <h4 id="Step3A" class="Row_Text Row_TextA" title="Step 3.">Step 3.</h4>
+                    <h4 id="Step4A" class="Row_Text Row_TextA" title="Step 4.">Step 4.</h4>
+                    <!--<h4 id="Step5A" class="Row_Text Row_TextA" title="Step 5.">Step 5.</h4>-->
+                </div>
+                <!--================== Column B =========================================-->
+                <div id="B_Top" class="Col_B Col">
+                    <div id="B1" class="subRow">
+                        <h4 id="Step1B" class="Row_Text Row_TextB" title="Choose Units">Choose Units:</h4>
+                        <h4 id="Step2B" class="Row_Text Row_TextB" title="Choose fuel price">Choose Fuel Price ($/Gal)</h4>
+                    </div>
+
+                    <div id="B2" class="subRow">
+                        <h4 id="Step5B" class="Row_Text Row_TextB">Fuel Economy (MPG)</h4>
+                    </div>
+                </div>
+                <!--================== Column C_Top===================================-->
+                <div id="C_Top" class="Col_C Col">
+                    <!--================== Column C1_Top===================================-->
+                    <div id="C1_Top" class="Col_C1">
+                        <select id="Unit_Selector" title="Please choose which fuel economy unit to use. MPG or L/100KM">
+                            <option value="MPG">MPG</option>
+                            <option value="L/100KM">L/100KM</option>
+                        </select>
+
+                        <input type="number" id="GasPrice1" class="currency gasprice" value="0.99" min="0.01" step="0.01" max="10.00" title="Enter the gas price you want to use. ($/gal) or ($/L)" />
+                        <input type="number" id="GasPrice2" class="currency gasprice" value="0.99" min="0.01" step="0.01" max="10.00" title="Enter the gas price you want to use. ($/gal) or ($/L)" />
+                        <input type="number" id="GasPrice3" class="currency gasprice" value="0.99" min="0.01" step="0.01" max="10.00" title="Enter the gas price you want to use. ($/gal) or ($/L)" />
+                    </div>
+                        <!--================== Column C1L =========================================-->
+                    <div id="C1L_Top" class="subCol_C">
+                        <input type="text" id="Vehicle1" class="Vehicle" placeholder="Vehicle Name" title="Name the vehicle you are comparing." />
+
+                        <input type="number" id="Economy1" class="Economy" min="0" max="500" step="1" title="Enter the Fuel Economy rating of the vehicle." placeholder="0" value="0"/>
+                    </div>
+                        <!--================== Column C2 =========================================-->
+                    <div id="C2_Top" class="subCol_C">
+                        <input type="text" id="Vehicle2" class="Vehicle" placeholder="Vehicle Name" title="Name the vehicle you are comparing." />
+
+                        <input type="number" id="Economy2" class="Economy" min="0" max="500" step="1" title="Enter the Fuel Economy rating of the vehicle." placeholder="0" value="0" />
+                    </div>
+                        <!--================== Column C3 =========================================-->
+                    <div id="C3_Top" class="subCol_C">
+                        <input type="text" id="Vehicle3" class="Vehicle" placeholder="Vehicle Name" title="Name the vehicle you are comparing." />
+
+                        <input type="number" id="Economy3" class="Economy" min="0" max="500" step="1" title="Enter the Fuel Economy rating of the vehicle." placeholder="0" value="0" />
+                    </div>
+                    <!--===  "Button" Row  ===-->
+                    <div id="B3" class="subCol_C">
+                        <input type="button" id="button_calc" class="button" title="Click here to calculate the fuel costs and compare the vehicles." value="Calculate Fuel Costs and Savings!" />
+                    </div>
+                </div>
+            </div>
+             <!--==================  "Middle1" Row  =========================================-->
+            <hr>
+            <div id="Middle1_Row" class="Row MiddleRow">
+                    <!--================== Column A =========================================-->
+                    <div id="A_Middle1" class="Col A_Middle">
+                        <h3 id="label_15k" class="labelA">15,000 Miles Driven</h3>
+                    </div>
+                    <!--================== Column B =========================================-->
+                    <div id="B_Middle1" class="Col B_Middle">
+
+                        <h4 id="label_FuelCost" class="RowText Row_TextB">Fuel Cost:</h4>
+                        <h4 id="label_FuelSavings" class="RowText Row_TextB">Fuel Savings:</h4>
+                    </div>
+                    <!--================== Column C1 =========================================-->
+                    <div id="C1_Middle1" class="Col C_Middle">
+
+                        <input type="text" id="Cost1" class="Cost" placeholder=" " title="The cost of fuel for the distance driven." readonly />
+                        <input type="text" id="Savings1" class="Savings" placeholder=" " title="How much you will save compared to the other cars being compared." readonly />
+                      </div>
+                    <!--================== Column C2 =========================================-->
+                    <div id="C2_Middle1" class="Col C_Middle">
+
+                        <input type="text" id="Cost2" class="Cost" placeholder=" " title="The cost of fuel for the distance driven." readonly />
+                        <input type="text" id="Savings2" class="Savings" placeholder=" " title="How much you will save compared to the other cars being compared." readonly />
+                    </div>
+                    <!--================== Column C3 =========================================-->
+                    <div id="C3_Middle1" class="Col C_Middle">
+
+                        <input type="text" id="Cost3" class="Cost" placeholder=" " title="The cost of fuel for the distance driven." readonly />
+                        <input type="text" id="Savings3" class="Savings" placeholder=" " title="How much you will save compared to the other cars being compared." readonly />
+                    </div>
+                </div>
+            <!--<div id="BackgroundBox1" class="BackgroundBox"> </div>-->
+            <!--==================  "Middle2" Row  =========================================-->
+            <hr>
+            <div id="Middle2_Row" class="Row MiddleRow">
+                <!--================== Column A =========================================-->
+                <div id="A_Middle2" class="Col">
+                    <h3 id="label_50k" class="labelA">50,000 Miles Driven</h3>
+                </div>
+                <!--================== Column B =========================================-->
+                <div id="B_Middle2" class="Col B_Middle">
+
+                    <h4 id="label_FuelCost" class="RowText Row_TextB">Fuel Cost:</h4>
+                    <h4 id="label_FuelSavings" class="RowText Row_TextB">Fuel Savings:</h4>
+                </div>
+                <!--================== Column C1 =========================================-->
+                <div id="C1_Middle2" class="Col C_Middle">
+
+                    <input type="text" id="Cost4" class="Cost" placeholder=" " title="The cost of fuel for the distance driven." readonly />
+                    <input type="text" id="Savings4" class="Savings" placeholder=" " title="How much you will save compared to the other cars being compared." readonly />
+                </div>
+                <!--================== Column C2 =========================================-->
+                <div id="C2_Middle2" class="Col C_Middle">
+
+                    <input type="text" id="Cost5" class="Cost" placeholder=" " title="The cost of fuel for the distance driven." readonly />
+                    <input type="text" id="Savings5" class="Savings" placeholder=" " title="How much you will save compared to the other cars being compared." readonly />
+                </div>
+                <!--================== Column C3 =========================================-->
+                <div id="C3_Middle2" class="Col C_Middle">
+
+                    <input type="text" id="Cost6" class="Cost" placeholder=" " title="The cost of fuel for the distance driven." readonly />
+                    <input type="text" id="Savings6" class="Savings" placeholder=" " title="How much you will save compared to the other cars being compared." readonly />
+                </div>
+            </div>
+            <!--==================  "Middle3" Row  =========================================-->
+            <hr>
+            <div id="Middle3_Row" class="Row MiddleRow">
+                <!--================== Column A =========================================-->
+                <div id="A_Middle3" class="Col">
+                    <h3 id="label_150k" class="labelA">150,000 Miles Driven</h3>
+                </div>
+                <!--================== Column B =========================================-->
+                <div id="B_Middle3" class="Col B_Middle">
+
+                    <h4 id="label_FuelCost" class="RowText Row_TextB">Fuel Cost:</h4>
+                    <h4 id="label_FuelSavings" class="RowText Row_TextB">Fuel Savings:</h4>
+                </div>
+                <!--================== Column C1 =========================================-->
+                <div id="C1_Middle3" class="Col C_Middle">
+
+                    <input type="text" id="Cost7" class="Cost" placeholder=" " title="The cost of fuel for the distance driven." readonly />
+                    <input type="text" id="Savings7" class="Savings" placeholder=" " title="How much you will save compared to the other cars being compared." readonly />
+                </div>
+                <!--================== Column C2 =========================================-->
+                <div id="C2_Middle3" class="Col C_Middle">
+
+                    <input type="text" id="Cost8" class="Cost" placeholder=" " title="The cost of fuel for the distance driven." readonly />
+                    <input type="text" id="Savings8" class="Savings" placeholder=" " title="How much you will save compared to the other cars being compared." readonly/>
+                </div>
+                <!--================== Column C3 =========================================-->
+                <div id="C3_Middle3" class="Col C_Middle">
+
+                    <input type="text" id="Cost9" class="Cost" placeholder=" " title="The cost of fuel for the distance driven." readonly />
+                    <input type="text" id="Savings9" class="Savings" placeholder=" " title="How much you will save compared to the other cars being compared." readonly />
+                </div>
+            </div>
+            <!--==================  "Bottom" Row  =========================================-->
+            <div id="Bottom_Row" class="Row">
+                <!-- Insert Disclaimer link and Version # at the Bottom -->
+                <div class="Row">
+                    <!-- Version Tag -->
+                    <h4 id="Version_Tag"> Version 4.0 <br />&copy; www.FinancialFox.ca</h4>
+                    <!-- Disclaimer popup -->
+                    <h5 id="Disclaimer">Disclaimer</h5>
+                    <script type="text/javascript">
+                        document.getElementById("Disclaimer").onclick = function () {
+                            sweetAlert(
+                         "", "This is an unofficial calculator, it is the user's responsibility to ensure the calculations are accurate.\n\nThe user is responsible for confirming the accuracy of this program's results. It is the user's responsibility to verify all the inputs, both explicit and implied as well as the calculations.\n\nBy using this website and all the tools and information found within, the user agrees that FinancialFox.ca and it's operators are not responsible or liable for anything.");
+                        }; </script>
+            </div>
+    </div>
+</div>
+       <script src="js/tracking.js"></script>
+</body>
+</html>

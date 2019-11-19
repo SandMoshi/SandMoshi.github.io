@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>TFSA Calculator (www.FinancialFox.ca)</title>
+
+    <link href="/css/CSS_TFSAform.css" rel="stylesheet" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/JS_TFSA.js"></script>
+    <!--This links to the SWEETALERT CODE-->
+    <script src="lib/sweet-alert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="lib/sweet-alert.css">
+    <!--This links to the FANCYBOX CODE-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <link rel="stylesheet" href="fancyBox/source/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancyBox/source/jquery.fancybox.pack.js"></script>
+</head>
+<body>
+    <div id="container">
+        <h1>TFSA Calculator</h1>
+        <h3>Determine Your TFSA Contribution Room!</h3>
+
+    <div id="Form1">
+            <!--==================Row A=========================================-->
+    <div id="RowA" class="RowDiv">
+        <!--==================Left Column=========================================-->
+        <div id="ColumnA" class="Columns Columns_Left">
+            <div id="Row1" class="Row">
+                <h4 id="Step1_Line" class="Row_Text">1. Enter your Birthdate: </h4>
+
+            </div>
+            <div id="Row2" class="Row">
+                <h4 id="Step2_Line" class="Row_Text">2. Total Contributions into TFSA to date: </h4>
+            </div>
+            <div id="Row3" class="Row">
+                <h4 id="Step3_Line" class="Row_Text">3. Total Withdrawals from TFSA to date: </h4>
+            </div>
+            <div id="Row4" class="Row">
+                <h4 id="Step4_Line" class="Row_Text">4. Contributions into TFSA this year: </h4>
+            </div>
+            <div id="Row5" class="Row">
+                <h4 id="Step5_Line" class="Row_Text">5. Withdrawals from TFSA this year: </h4>
+            </div>
+       </div>
+        <!--==================Right Column=========================================-->
+            <div id="Column2" class="Columns Columns_Right">
+                <div class="Row">
+                    <input type="date"
+                           class="input_date"
+                           id="birthdate"
+                           title="Enter your birthdate. It is used to determine TFSA eligibility." />
+
+                </div>
+                <div class="Row">
+                    <input type="text"
+                           class="input_money"
+                           id="ContributionsToDate"
+                           title="Enter the total amount of contributions you have ever made into your TFSA.
+                       If you have multiple TFSA accounts, sum up all your contributions." />
+                </div>
+                <div class="Row">
+                    <input type="text"
+                           class="input_money"
+                           id="WithdrawalsToDate"
+                           title="Enter the total amount of withdrawals you have ever taken from your TFSA.
+                       If you have multiple TFSA accounts, sum up all your withdrawals." />
+                </div>
+                <div class="Row">
+                    <input type="text"
+                           class="input_money"
+                           id="ContributionsThisYear"
+                           title="  Enter the amount of contributions you have made into your TFSA during the current calendar year.
+                                The amount in Step 2 should have also included this amount.
+                                If you have multiple TFSA accounts, sum up all your contributions." />
+                </div>
+                <div class="Row">
+                    <input type="text"
+                           class="input_money"
+                           id="WithdrawalsThisYear"
+                           title="Enter the amount of withdrawals you have taken from your TFSA during the current calendar year.
+                                The amount in Step 3 should have also included this amount.
+                                If you have multiple TFSA accounts, sum up all your withdrawals." />
+                </div>
+            </div>
+
+    </div>
+            <!--==================Row B=========================================-->
+            <div id="RowB" class="RowDiv">
+                <div class="Row">
+                    <input type="button"
+                           class="button_calc"
+                           id="button_calculate"
+                           title="Click here to calculate your TFSA contribution limits"
+                           value="Calculate Contribution Room" />
+                </div>
+            </div>
+            <!--==================Row C=========================================-->
+            <div id="RowC" class="RowDiv">
+                <!--==================Left Column=========================================-->
+                <div id="ColumnAC" class="Columns Columns_Left">
+
+                    <div id="Row1b" class="Row">
+                        <h4 id="MaxTFSA" class="Out_Text">Initial TFSA Contribution Room:</h4>
+                    </div>
+
+                    <div id="Row6" class="Row">
+                        <h4 id="Step6_Line" class="Out_Text">Remaining Contribution Room (now): </h4>
+                    </div>
+                    <div id="Row7" class="Row">
+                        <h4 id="Step7_Line" class="Out_Text">Next Year's Contribution Limit: </h4>
+                    </div>
+
+                </div>
+                <!--==================Right Column=========================================-->
+                <div id="Column2C" class="Columns Columns_Right">
+                    <div class="Row">
+                        <input type="text"
+                               class="output"
+                               id="output_MaxTFSA"
+                               title="Your starting TFSA amount if you have never contributed to a TFSA"
+                               readonly />
+                    </div>
+                    <div class="Row">
+                        <input type="text"
+                               class="output"
+                               id="output_TFSAlimit"
+                               title="The contribution room available in the TFSA currently. You can contribute up to this amount penalty free." />
+                    </div>
+                    <div class="Row">
+                        <input type="text"
+                               class="output"
+                               id="output_TFSAfuture"
+                               title="The contribution room that will be available at the start of the next calendar year. Assumes no other withdrawals or contributions are made for the remainder of this year." />
+                    </div>
+            </div>
+    </div>
+            <!--==================Row D=========================================-->
+            <div id="RowD" class="RowDiv">
+                <textarea class="MessageTextBox"
+                          readonly>   Notes:
+ &bull; For more information please visit http://www.tfsa.gc.ca/
+ &bull; "This year" amounts should be included in the "to date" amounts
+ &bull; This is an unofficial calculator, please read the disclaimer.</textarea>
+
+                <div class="Row">
+                    <h5 id="Disclaimer">Disclaimer</h5>
+                    <script type="text/javascript">
+                     document.getElementById("Disclaimer").onclick = function () {
+                         sweetAlert("", "This is an unofficial calculator, it is the user's responsibility to ensure the calculations are accurate.\n\nThe user is responsible for confirming the accuracy of this program's results. It is the user's responsibility to verify their contribution rooms with the CRA (Canada Revenue Agency) before making any additional contributions or withdrawals.\n\nBy using this website and all the tools and information found within, the user agrees that FinancialFox.ca and it's operators are not responsible or liable for anything.")
+                     }; </script>
+
+                  <h4 id="Version_Tag"> Version 5.0 (2016) <br />&copy; www.FinancialFox.ca</h4>
+                </div>
+            </div>
+          </div>
+        </div>
+        <script src="js/tracking.js"></script>
+</body>
+</html>
