@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Escape/static/css/main.47318744.css",
-    "main.js": "/Escape/static/js/main.a118b1f2.js",
+    "main.css": "/Escape/static/css/main.abe5e9cb.css",
+    "main.js": "/Escape/static/js/main.3e9173df.js",
     "static/media/Echoes_of_Time_v2.mp3": "/Escape/static/media/Echoes_of_Time_v2.514d7efcce575483acb1.mp3",
     "static/media/Echoes_of_Time.mp3": "/Escape/static/media/Echoes_of_Time.0dfc8c5666302e09116f.mp3",
     "static/media/Dark_Times.mp3": "/Escape/static/media/Dark_Times.788042e34f04702610a3.mp3",
@@ -17,19 +17,21 @@
     "static/media/kwahmah-stations-broadcasting_noise-reduced.mp3": "/Escape/static/media/kwahmah-stations-broadcasting_noise-reduced.79ce8b5c3f7a09df2ca2.mp3",
     "static/media/3270SemiNarrow.ttf": "/Escape/static/media/3270SemiNarrow.a1c3dd5a99361223df18.ttf",
     "static/media/daytripper-sos-mayday.mp3": "/Escape/static/media/daytripper-sos-mayday.6d4fee9e51767786540a.mp3",
+    "static/media/digital_glitches.mp3": "/Escape/static/media/digital_glitches.e39596e63497250ca5e4.mp3",
     "static/media/Background_1.png": "/Escape/static/media/Background_1.6b3c89d5c5485c1b4167.png",
     "static/media/trebblofang_pi_short.mp3": "/Escape/static/media/trebblofang_pi_short.352b3ba6122179681aa3.mp3",
     "static/media/morse-30wps.mp3": "/Escape/static/media/morse-30wps.50478d6542d9ce23688b.mp3",
+    "static/media/cipher_machine.mp3": "/Escape/static/media/cipher_machine.63e9da853df8309da273.mp3",
     "static/media/timbre_telecom_heavily_edited.mp3": "/Escape/static/media/timbre_telecom_heavily_edited.2f25ecca7a64685ef432.mp3",
     "static/media/Greenscr.ttf": "/Escape/static/media/Greenscr.10d0f9477d1fa9178660.ttf",
     "static/media/logo.svg": "/Escape/static/media/logo.927f1d60d9299096a4a8068289cc4d4b.svg",
     "static/media/phone-position-rotation-from-horizontal-to-vertical.svg": "/Escape/static/media/phone-position-rotation-from-horizontal-to-vertical.36fc50faf7d193fb9f3a8bff2bd8e1d0.svg",
     "index.html": "/Escape/index.html",
-    "main.47318744.css.map": "/Escape/static/css/main.47318744.css.map",
-    "main.a118b1f2.js.map": "/Escape/static/js/main.a118b1f2.js.map"
+    "main.abe5e9cb.css.map": "/Escape/static/css/main.abe5e9cb.css.map",
+    "main.3e9173df.js.map": "/Escape/static/js/main.3e9173df.js.map"
   },
   "entrypoints": [
-    "static/css/main.47318744.css",
-    "static/js/main.a118b1f2.js"
+    "static/css/main.abe5e9cb.css",
+    "static/js/main.3e9173df.js"
   ]
 }
