@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkweb=self.webpackChunkweb||[]).push([[425],{2425:(e,s,t)=>{e.exports=t.p+"static/media/fonts-3270.metainfo.8449b0963d3687b38240.xml"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkweb=self.webpackChunkweb||[]).push([[149],{4149:(e,t,o)=>{e.exports=o.p+"static/media/phone-position-rotation-from-horizontal-to-vertical.36fc50faf7d193fb9f3a.svg"}}]);

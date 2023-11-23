@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkweb=self.webpackChunkweb||[]).push([[690],{5690:(e,s,t)=>{e.exports=t.p+"static/media/LICENSE.ba1141a235f838dd3842.txt"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkweb=self.webpackChunkweb||[]).push([[837],{4837:(e,b,s)=>{e.exports=s.p+"static/media/3270Medium.1b5b9e330554a4e8044b.otf"}}]);

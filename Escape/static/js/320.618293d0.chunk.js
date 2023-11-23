@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkweb=self.webpackChunkweb||[]).push([[320],{7320:(e,s,f)=>{e.exports=f.p+"static/media/3270_fonts_2851f93.5f06aed4b8e609f430f5.zip"}}]);

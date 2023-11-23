@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkweb=self.webpackChunkweb||[]).push([[601],{601:(e,s,a)=>{e.exports=a.p+"static/media/screen_figma.0d60f4f9faee6d75486e.png"}}]);
